@@ -32,7 +32,7 @@ and QA testing, and much more.
    ```
 
 ## Or Visit Our External Link
-[Visit TourMe](35.209.194.163 "TourMe's Homepage")
+[Visit TourMe](http://35.209.194.163 "TourMe's Homepage")
 
 
 # 🚀 About Me
