@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOUR ME</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/social.css" />
+    <link rel="stylesheet" href="../css/tourGuideselection.css" />
+    <link rel="stylesheet" href="../css/navigationBar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9852b225f3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    
+    <div class="fullpage">
+      <header>
+        <input type="checkbox" id="check" />
+        <nav>
+          <div class="logo">
+            <a href="../html/tourselection.html">
+              <img src="../images/icon.png" alt="" />
+            </a>
+          </div>
+  
+          <div class="search-box">
+            <input id="search-text" type="search" placeholder="Search..." />
+            <button id="search-button" class="fa fa-search src-btn"></button>
+          </div>
+  
+          <ul>
+            <!-- <li><a href="/">Home</a></li> -->
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-cart-shopping">
+                  <p id="count">0</p>
+                </i></a
+              >
+            </li>
+            <li><a href="./login.html">Sign Out</a></li>
+            <a href="#"
+              ><img class="imgprofile" src="../images/tourist.jpg" alt=""
+            /></a>
+          </ul>
+  
+          <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+          </label>
+        </nav>
+      </header>
+
+      <h3 class="quotetop">
+        Search results 
+      </h3></script>
+
+    <style>
+      .available-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5rem;
+    }
+
+    .card {
+      background-color: #fafafa;
+      border-radius: 20px;
+      padding: 10px 10px;
+    }
+
+    .card > .package-name{
+      font-size: 26px;
+    }
+
+    .card > .package-img{
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      
+    }
+
+    .card > .package-img > img {
+      /* Set the maximum width and height for the image */
+      max-width: 200px;
+      max-height: 200px;
+      border-radius: 15px;
+    }
+
+    .no-results {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+
+    </style>
+</head>
+<body>
+  
+  <ul id="results"></ul>
+  <div id="results-container"></div>
+  
+
+  <div class="available-cards" id="available-cards"avail-cards-container></div>
+
+    <template data-avail-template>
+      <div class="card">
+        <div class="package-img" id="img" data-img></div>
+        <div class="package-name" data-name></div>
+        <div class="package-time" data-time></div>
+        <div class="package-date" data-date></div>
+        <div class="package-num-tourists" data-num-tourists></div>
+        <div class="package-location" data-location></div>
+        <div class="package-accomodations" data-accomodations></div>
+        <div class="package-duration" data-duration></div>
+        <div class="package-price" data-price></div>
+      </div>
+    </template>
+
+    <section>
+      <!--Foter and links icons   -->
+      <div class="global">
+        <div class="curve"></div>
+        <div class="contaainer">
+          
+          <p class="copyright">&copy; Copyright All rights reserved.  </p>
+        </div>
+  
+      </div>
+      </section>
+ 
+  <script type="text/javascript" src="../js/searchResult.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/search.js"></script>
+</body>
+</html>

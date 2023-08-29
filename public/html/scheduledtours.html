@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOUR ME</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navigationBar.css" />
+    <link rel="stylesheet" href="../css/scheduledtours.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9852b225f3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Start of Navigation Bar-->
+    <header>
+      <input type="checkbox" id="check" />
+      <nav>
+        <div class="logo">
+          <a href="../html/tourselection.html">
+            <img src="../images/icon.png" alt="" />
+          </a>
+        </div>
+
+        <div class="search-box">
+          <input id="search-text" type="search" placeholder="Search..." />
+          <button id="search-button" class="fa fa-search src-btn"></button>
+        </div>
+
+        <ul>
+          <!-- <li><a href="/">Home</a></li> -->
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-cart-shopping">
+                <p id="count">0</p>
+              </i></a
+            >
+          </li>
+          <li><a href="/auth/logout">Sign Out</a></li>
+          <a href="#"
+            ><img class="imgprofile" src="../images/tourist.jpg" alt=""
+          /></a>
+        </ul>
+
+        <label for="check" class="bar">
+          <span class="fa fa-bars" id="bars"></span>
+          <span class="fa fa-times" id="times"></span>
+        </label>
+      </nav>
+    </header>
+    <!-- End of Navigation Bar -->
+    <div class="pageheading"></div>
+    <div class="fullpage">
+      <h2>Tour Guide Schedule</h2>
+      <div class="mainhome">
+        <div class="tourdetail">
+          <img src="../images/gg.jpg" alt="ggbridge" />
+          <div class="tourdetailslist">
+            <h5>Morning</h5>
+            <div class="insidedata">
+              <div class="col1">
+                <h6>Time: 10:00 pm</h6>
+                <h6>Date: 2023/07/17</h6>
+                <h6>Pick up location: Somewhere</h6>
+              </div>
+            </div>
+          </div>
+          <div class="addinCart">
+            <a class="removeOrder" href="#" id="add-cart">Cancel</a>
+          </div>
+        </div>
+        <div class="tourdetail">
+          <img src="../images/gg.jpg" alt="ggbridge" />
+          <div class="tourdetailslist">
+            <h5>Mid Day</h5>
+            <div class="insidedata">
+              <div class="col1">
+                <h6>Time: 10:00 pm</h6>
+                <h6>Date: 2023/07/17</h6>
+                <h6>Pick up location: Somewhere</h6>
+              </div>
+            </div>
+          </div>
+          <div class="addinCart">
+            <a class="removeOrder" href="#" id="add-cart">Cancel</a>
+          </div>
+        </div>
+        <div class="tourdetail">
+          <img src="../images/gg.jpg" alt="ggbridge" />
+          <div class="tourdetailslist">
+            <h5>Evening</h5>
+            <div class="insidedata">
+              <div class="col1">
+                <h6>Time: 10:00 pm</h6>
+                <h6>Date: 2023/07/17</h6>
+                <h6>Pick up location: Somewhere</h6>
+              </div>
+            </div>
+          </div>
+          <div class="addinCart">
+            <a class="removeOrder" href="#" id="add-cart">Cancel</a>
+          </div>
+        </div>
+        <div class="showtotal">
+          <div class="total">
+            <h3>Today's Earning</h3>
+          </div>
+          <h3>$350</h3>
+        </div>
+
+        <a href="/confirmations" class="confirmation">Confirm your schedule</a>
+      </div>
+    </div>
+    <section>
+      <!--Foter and links icons   -->
+      <div class="global">
+        <div class="curve"></div>
+        <div class="contaainer">
+          <p class="copyright">&copy; Copyright All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+  </body>
+</html>

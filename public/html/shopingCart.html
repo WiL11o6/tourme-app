@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOUR ME</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navigationBar.css" />
+    <link rel="stylesheet" href="../css/social.css" />
+    <link rel="stylesheet" href="../css/shopingCart.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9852b225f3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+
+    <!-- Start of Navigation Bar-->
+    <header>
+      <input type="checkbox" id="check" />
+      <nav>
+        <div class="logo">
+          <a href="../html/tourselection.html">
+            <img src="../images/icon.png" alt="" />
+          </a>
+        </div>
+
+        <div class="search-box">
+          <input id="search-text" type="search" placeholder="Search..." />
+          <button id="search-button" class="fa fa-search src-btn"></button>
+        </div>
+
+        <ul>
+          <!-- <li><a href="/">Home</a></li> -->
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-cart-shopping">
+                <p id="count">0</p>
+              </i></a
+            >
+          </li>
+          <li><a href="/auth/logout">Sign Out</a></li>
+          <a href="/userprofile"><img id="userProfilePhoto" class="imgprofile" src="../images/default_profile.png" alt=""/></a>
+        </ul>
+
+        <label for="check" class="bar">
+          <span class="fa fa-bars" id="bars"></span>
+          <span class="fa fa-times" id="times"></span>
+        </label>
+      </nav>
+    </header>
+              <!-- End of Navigation Bar -->
+    
+              <div class="pageheading"></div>
+
+              <div class="fullpage">
+                <h2>Reviewing and edit cart</h2>
+      <div class="mainhome">
+        
+        <div class="mainboxeach">
+          
+         
+            <div class="tourdetail" >
+              <img
+              src="/images/gg.jpg"
+              alt="ggbridge"
+              />
+              <div class="tourdetailslist">
+                
+                <div class="insidedata">
+                  <div class="col1">
+                    <h5>Golden Gate Bridge</h5>
+                  <h6>Time: 10:00 pm</h6>
+                  <h6>Date: 2023/07/17</h6>
+                  <h6>Pickup Location: </h6>
+                  </div>
+                  <div class="col2">
+                    <div class="addtocart">
+                      Edit
+                    </div>
+                    <div class="addtocart">
+                      Cancel
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="tourdetail" >
+              <img
+              src="/images/gg.jpg"
+              alt="ggbridge"
+              />
+              <div class="tourdetailslist">
+                
+                <div class="insidedata">
+                  <div class="col1">
+                    <h5>Golden Gate Bridge</h5>
+                  <h6>Time: 10:00 pm</h6>
+                  <h6>Date: 2023/07/17</h6>
+                  <h6>Pickup Location: </h6>
+                  </div>
+                  <div class="col2">
+                    <div class="addtocart">
+                      Edit
+                    </div>
+                    <div class="addtocart">
+                      Cancel
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="tourdetail" >
+              <img
+              src="/images/userphoto.png"
+              alt="ggbridge"
+              />
+              <div class="tourguide-details" id="selectedTourGuideDetails">
+                <h5>Tour Guide</h5>
+                <div class="insidedata">
+                  <div class="col1">
+                    <h6>Name: Guide Name:  </h6>
+                    <h6>Age: </h6>
+                    <h6>Details: </h6>
+                  </div>
+                  <div class="col2">
+                    
+                    <div class="addtocart">
+                      Edit
+                    </div>
+                    <div class="addtocart">
+                      Cancel
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="wrapleft">
+            Total : $350                   
+          </div>
+          
+        </div>
+        <a href="/touristcheckout"class="checkout">
+          Proceed To Checkout
+        </a>
+    </div>
+    <section>
+    <!--Footer and links icons   -->
+    <div class="global">
+      <div class="curve"></div>
+      <div class="contaainer">
+        
+        <p class="copyright">&copy; Copyright All rights reserved.  </p>
+      </div>
+
+    </div>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const addMeButtons = document.querySelectorAll(".addGuideButton");
+        selectGuideButtons.forEach((button) => {
+          button.addEventListener('click', (event)=>{
+            event.preventDefault();
+            const guideId = button.dataset.guideId;
+            selectedTourGuide(guideId);
+            updateTourGuideDetails(guideId);
+            window.location.href = '/shopingcart?guideId=' + guideId;
+        });
+      });
+      function selectTourGuide(guideId) {
+        window.location.herf = '/shopingCart.html';
+      }
+  });
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

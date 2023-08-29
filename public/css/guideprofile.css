@@ -1,0 +1,36 @@
+.line {
+   border: 1px solid rgb(133, 129, 129);
+   margin: 5px 20%;
+ }
+ .userProfileInfo{
+   display: grid;
+   grid-template-columns: auto auto auto;
+ }
+ 
+.imgprofile{
+   border-radius: 50px;
+   margin: 35px;
+   width: 300px;
+   height: 300px;
+}
+ .insideDataBut{
+display:inline-block;
+flex-grow: 6;
+text-decoration: none;
+padding: 15px 20px;
+margin: 15px 20%;
+font-size: 20px;
+margin-top: 10px;
+
+background-color: #647078;
+   color:#ffffff;
+   border-radius: 30px;
+ }
+.eachBut{
+display: flex;
+ }
+ 
+.eachBut a{
+display: flex;
+flex-grow: 1;
+ }

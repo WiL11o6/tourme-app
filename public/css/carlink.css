@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  --text-orange:#ff670e;
+  --clr: #0ab3ff;
+  --error-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+}
+
+.signup-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+ .form {
+    padding: 60px 80px 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px;
+    border: solid;
+    border-color: #ff670e;
+  }
+  .form .mainbox{
+    display :flex;
+  }
+.form .col1{
+  flex-grow: 1;
+}
+.form .col2{
+  flex-grow: 1;
+}
+ .form h1 {
+    color: var(--text-orange);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+  }
+
+  .mainbox .form-field {
+    position: relative;
+    width: 180px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .form-field {
+    position: relative;
+    width: 400px;
+    margin-bottom: 40px;
+  }
+
+  .checkbox-field {
+    position: relative;
+    padding: 0 0 20px 0;
+    align-items: center;
+  }
+  .checkbox-field input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    margin: 5px 0 0 0;
+    transform: scale(1.5);
+    background-color: red;
+  }
+
+  .checkbox-field label {
+    display: flex;
+    position: relative;
+    margin: 0 0 0 25px;
+  }
+
+  .form-field input {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: solid 2px #999;
+    outline: none;
+    color: black;
+    font-size: 1em;
+    letter-spacing: 0.15em;
+  }
+
+  .form-field label {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    color: #999;
+    text-transform: uppercase;
+  }
+
+  .form-field label span {
+    position: relative;
+    display: inline-flex;
+    letter-spacing: 0.05em;
+    transition: 0.3s ease-in-out;
+  }
+
+  .form-field input:focus ~ label span,
+  .form-field input:valid ~ label span{
+    color: var(--clr);
+    letter-spacing: 0.15em;
+    transform: translateY(-25px);
+    transition: 0.2 ease-in-out;
+  }
+
+  .form-field input:focus,
+  .form-field input:valid {
+    border-bottom: 2px solid var(--clr);
+  }
+
+  .form-field input[type="submit"] {
+    text-align: center;
+    background: var(--text-orange);
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.15em;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .form-field input[type="submit"]:hover {
+    letter-spacing: 0.35em;
+  }
+
+  .form p {
+    color: var(--text-orange);
+  }
+
+  .form p a {
+    color: #0000FF;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .form p a:hover {
+    color: var(--clr);
+    text-decoration: underline;
+  }
+
+  /*-------------------------- Validation Code --------------------- */
+
+  .form-field.error label,
+  .form-field.error label:focus {
+    color: var(--text-orange);
+  }
+  .form-field.error input {
+    border-bottom: 2px solid var(--error-color);
+  }
+  
+  .form-field.success input {
+    border-bottom: 2px solid var(--clr);
+  }
+  
+  
+  .form-field small {
+    color: var(--text-orange);
+  }
+
+
+ 

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOUR ME</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/social.css" />
+    <link rel="stylesheet" href="../css/availiablePackages.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9852b225f3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+    <script src="https://js.stripe.com/v3/" defer></script>
+    <script>
+      var stripePublicKey = '<%= stripePublicKey %>'
+    </script>
+  </head>
+  <body>
+    
+    <div class="fullpage">
+      <div class="header">
+        <a href="../index.html" class="logo"><img src="../images/icon.png" alt="Logo" /> </a>
+
+        
+<!---Added search Bar -->
+<ul class="navbar">
+<div class="srch">
+  <from action="" class="search-bar">
+    <input type="text" placeholder="search" name="src">
+    <button class="src-btn">Search</button></li>
+  </from>
+</div>     
+<!---end of search Bar-->
+          <li><a href="/" class="active">Home</a></li>
+        </ul>
+
+        <div class="loginButton">
+          <a class="loginBut" href="/auth/logout" id="logout-popup">Log Out</a>
+          <div class="userProfile">
+            <a href="/userprofile"><img class="imgprofilemin" src="../images/tourist.jpg" alt="Profile pic"></a>
+        </div>
+          <div class="menu-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="mainhome">
+
+        <!---------- Package #1 ------->
+        <div class="mainboxeach">
+              <div class="shop-items">
+                <% items.package1.forEach(function(item){ %>
+                <span class="shop-item-title"><%= item.name%></span>
+                <div class="shop-item" data-item-id="<%= item.id %>">
+                    <img class="shop-item-image" src="../images/<%= item.imgName %>">
+                      <div class="shop-item-data">
+                        <span class="shop-item-name">Golden Gate Bridge</span>
+                        <span class="shop-item-date">Date: 2023/07/17</span>
+                        <span class="shop-item-time">Time: 10:00 AM</span>
+                        <span class="shop-item-location">Pickup Location: Somewhere</span>
+                      </div>
+                </div>
+                <div class="shop-item">
+                  <img class="shop-item-image" src="../images/img1.jpg">
+                    <div class="shop-item-data">
+                      <span class="shop-item-name">Golden Gate Bridge</span>
+                      <span class="shop-item-date">Date: 2023/07/17</span>
+                      <span class="shop-item-time">Time: 10:00 AM</span>
+                      <span class="shop-item-location">Pickup Location: Somewhere</span>
+                    </div>
+                  <div class="shop-item-details">
+                      <span class="shop-item-price">$<%= item.price /100 %></span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+              </div>
+              <% }) %>
+            </div>
+        </div>
+
+        <!-------Package #2 ------->
+        <div class="mainboxeach">
+          <!--first item-->
+          <div class="shop-items">
+            <% items.package2.forEach(function(item){ %>
+            <span class="shop-item-title"><%= item.name%></span>
+            <div class="shop-item" data-item-id="<%= item.id %>">
+                <img class="shop-item-image" src="../images/<%= item.imgName %>">
+                  <div class="shop-item-data">
+                    <span class="shop-item-name">Golden Gate Bridge</span>
+                    <span class="shop-item-date">Date: 2023/07/17</span>
+                    <span class="shop-item-time">Time: 10:00 AM</span>
+                    <span class="shop-item-location">Pickup Location: Somewhere</span>
+                  </div>
+            </div>
+            <!--second item-->
+            <div class="shop-item">
+              <img class="shop-item-image" src="../images/gg.jpg">
+                <div class="shop-item-data">
+                  <span class="shop-item-name">Golden Gate Bridge</span>
+                  <span class="shop-item-date">Date: 2023/07/17</span>
+                  <span class="shop-item-time">Time: 10:00 AM</span>
+                  <span class="shop-item-location">Pickup Location: Somewhere</span>
+                </div>
+          </div>
+          <!--third item-->
+            <div class="shop-item">
+              <img class="shop-item-image" src="../images/gg.jpg">
+                <div class="shop-item-data">
+                  <span class="shop-item-name">Golden Gate Bridge</span>
+                  <span class="shop-item-date">Date: 2023/07/17</span>
+                  <span class="shop-item-time">Time: 10:00 AM</span>
+                  <span class="shop-item-location">Pickup Location: Somewhere</span>
+                </div>
+              <div class="shop-item-details">
+                  <span class="shop-item-price">$<%= item.price / 100 %></span>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+              </div>
+          </div>
+          <% }) %>
+        </div>
+    </div>
+
+        </div>
+        <a href="">Load more</a>
+    </div>
+
+    <!--Shopping cart -->
+    <section class="container-cart content-section">
+      <h2 class="section-header">Shopping Cart</h2>
+      <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+      </div>
+      <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+  </section>
+
+<!--END of page-->
+
+
+    <!--Foter and links icons   -->
+    <section>
+    <div class="global">
+      <div class="curve"></div>
+      <div class="contaainer">
+        <div class="col-md-6 col-md-3">
+          <h1>TourMe Today</h1>
+          <p>is a meticulously crafted web application developed by a San Francisco State University student 
+            as part of their final project in a class. The aim of this endeavor is to seek potential investors 
+            who can provide financial support and enable the application to serve the burgeoning tourist population 
+            visiting San Francisco. Moreover, this application presents a unique opportunity for individuals interested 
+            in sharing their firsthand experiences from the enchanting locations that San Francisco has to offer, as 
+            it also provides employment opportunities.</p>
+        </div>
+        <div class="row">
+          <div class="col-sm-6-col-md-1">
+            <h6>Service</h6>
+            <ul>
+              <li><a href="#" >Package </a></li>
+              <li><a href="#" >Tour Guide</a></li>
+              <li><a href="#" >Torist </a></li>
+              <li><a href="#" >Design Tour Package</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6-col-md-2">
+            <h6>About Us</h6>
+            <ul>
+              <li> <a href="#" >Our Story</a> </li>
+              <li><a href="#" >Teams</a></li>
+              <li><a href="#" > Careers </a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6-col-md-3">
+            <h6>Legal</h6>
+            <ul>
+              <li><a href="#" >Terms & Conditions </a></li>
+              <li><a href="#" >Privacy Policy</a> </li>
+              <li><a href="#" >Torist </a></li>
+              <li><a href="#" >Users Terms</a></li>
+            </ul>
+          </div>
+
+          <!---social medai icons -->
+          <div class="Social">
+            <h6>Follow us </h6>
+            <a href="../html/tourselection.html"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></a></i>
+            <a href="#"><i class="fa-brands fa-square-snapchat"></a></i>
+          </div>
+
+        </div>
+        <p class="copyright">&copy; Copyright All rights reserved.  </p>
+      </div>
+
+    </div>
+    </section>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/validation.js"></script>
+    <script type="text/javascript" src="../js/cart.js" defer></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/carlink.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!------------------- Navigation must----------------->
+    <link rel="stylesheet" href="../css/navigationBar.css" />
+    <script src="https://kit.fontawesome.com/9852b225f3.js"></script>
+    <!---------------------------------------------------->
+  </head>
+  <body>
+    <!-- Start of Navigation Bar-->
+    <header>
+      <input type="checkbox" id="check" />
+      <nav>
+        <div class="logo">
+          <a href="/">
+            <img src="../images/icon.png" alt="" />
+          </a>
+        </div>
+
+        <div class="search-box">
+          <input id="search-text" type="search" placeholder="Search..." />
+          <button id="search-button" class="fa fa-search src-btn"></button>
+        </div>
+
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li>
+            <a href="#">Cart <i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+          <li><a href="/login">Sign in</a></li>
+          <a href="#"
+            ><img class="imgprofile" src="../images/tourist.jpg" alt=""
+          /></a>
+        </ul>
+
+        <label for="check" class="bar">
+          <span class="fa fa-bars" id="bars"></span>
+          <span class="fa fa-times" id="times"></span>
+        </label>
+      </nav>
+    </header>
+    <!-- End of Navigation Bar -->
+    <div class="pageheading"></div>
+
+    <div class="fullpage">
+      <h2>Vehicle Information</h2>
+      <main class="signup-card-container">
+        <form
+          id="signup"
+          class="form"
+          method="post"
+          action=""
+          enctype="application/x-www-form-urlencoded"
+        >
+          <h1>Vehicle Information</h1>
+          <div class="mainbox">
+            <div class="col1">
+              <div class="form-field">
+                <input
+                  type="text"
+                  name="make"
+                  id="make"
+                  required
+                  autocomplete="off"
+                />
+                <label class="label-field" for="make">Make</label>
+                <small></small>
+              </div>
+              <div class="form-field">
+                <input
+                  type="text"
+                  name="year"
+                  id="year"
+                  required
+                  autocomplete="off"
+                />
+                <label class="label-field" for="year">Year</label>
+                <small></small>
+              </div>
+              <div class="form-field">
+                <input
+                  type="text"
+                  name="dl"
+                  id="dl"
+                  required
+                  autocomplete="off"
+                />
+                <label class="label-field" for="dl">DL</label>
+                <small></small>
+              </div>
+            </div>
+            <div class="col2">
+              <div class="form-field">
+                <input
+                  type="text"
+                  name="model"
+                  id="model"
+                  required
+                  autocomplete="off"
+                />
+                <label class="label-field" for="model">Model</label>
+                <small></small>
+              </div>
+              <div class="form-field">
+                <input
+                  type="text"
+                  name="license"
+                  id="license"
+                  required
+                  autocomplete="off"
+                />
+                <label class="label-field" for="license">License</label>
+                <small></small>
+              </div>
+              <div class="form-field">
+                <input
+                  type="text"
+                  name="color"
+                  id="color"
+                  required
+                  autocomplete="off"
+                />
+                <label class="label-field" for="color">Color</label>
+                <small></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <input
+              type="text"
+              name="VechileType"
+              id="VechileType"
+              required
+              autocomplete="off"
+            />
+            <label class="label-field" for="VechileType"
+              >Vehicle&nbsp;Type</label
+            >
+            <small></small>
+          </div>
+
+          <div class="form-field">
+            <input type="submit" value="Submit For Review" />
+          </div>
+        </form>
+      </main>
+    </div>
+    <!--Foter and links icons   -->
+    <section>
+      <div class="global">
+        <div class="curve"></div>
+        <div class="contaainer">
+          <p class="copyright">&copy; Copyright All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Javascript for registration form-->
+    <script>
+      let label = document.querySelectorAll(".label-field").forEach((label) => {
+        label.innerHTML = label.innerText
+          .split("")
+          .map(
+            (letters, i) => `<span style="transition-delay: $
+                    {i * 50}ms">${letters}</span>`
+          )
+          .join("");
+      });
+    </script>
+    <script type="text/javascript" src="../js/validation.js"></script>
+  </body>
+</html>

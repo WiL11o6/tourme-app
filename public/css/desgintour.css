@@ -1,0 +1,59 @@
+.containerr {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 5px;
+    background-color:#6c6b5d;
+    padding: 20px;
+    height: 450px;
+    margin-top: 4%;
+    border-radius: 10px;
+    margin-bottom: -8px;
+}
+
+input[type=text], select{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 9px;
+    box-sizing: border-box;
+    height: 40px;
+    font-size: 10px;
+
+}
+.sbt-btn{
+    background-color: #FF8E0A;
+    height: 40px;
+    margin-top: 70px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sbt-btn:hover{
+    color: #6e6d63;
+}
+
+.textreserve{
+    background-color: #FF8E0A;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+input[type=date],select{
+    font-size: 15px;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 4%;
+
+}
+
+.date {
+    padding-left: 23px;
+}

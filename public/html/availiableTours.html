@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOUR ME</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/touroption.css" />
+    <link rel="stylesheet" href="../css/desgintour.css" />
+    <link rel="stylesheet" href="../css/userprofile.css" />
+    
+    <link rel="stylesheet" href="../css/navigationBar.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9852b225f3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+
+    <div class="fullpage">
+      <header>
+        <input type="checkbox" id="check" />
+        <nav>
+          <div class="logo">
+            <a href="../html/tourselection.html">
+              <img src="../images/icon.png" alt="" />
+            </a>
+          </div>
+  
+          <div class="search-box">
+            <input id="search-text" type="search" placeholder="Search..." />
+            <button id="search-button" class="fa fa-search src-btn"></button>
+          </div>
+  
+          <ul>
+            <!-- <li><a href="/">Home</a></li> -->
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-cart-shopping">
+                  <p id="count">0</p>
+                </i></a
+              >
+            </li>
+            <li><a href="/auth/logout">Sign Out</a></li>
+            <a href="/userprofile"><img class="imgprofile" src="../images/tourist.jpg" alt=""
+            /></a>
+          </ul>
+  
+          <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+          </label>
+        </nav>
+      </header>
+      <h3 class="quotetop">
+        Morning Tours
+      </h3>
+      
+      <!--<div class="mainhome">
+        <div class="tourdetail" >
+          <img
+          src="../images/gg.jpg"
+          alt="ggbridge"
+          
+        />
+        <div class="tourdetailslist">
+          <h5>Golden Gate Bridge</h5>
+          <div class="insidedata">
+          <div class="col1">
+            <h6>Time: 10:00 pm</h6>
+          <h6>Date: 2023/07/17</h6>
+          <h6>Number of tourist: 5</h6>
+          <h6>Locations: a,b,c</h6>
+          </div>
+          <div class="col2">
+            <h6>Accomodations: availiable</h6>
+            <h6>Duration of tour: 2 days</h6>
+            <h6>Total Amount: $150</h6>
+          </div>
+          
+          </div>
+        </div>
+        <div class="addinCart">
+          <a class="addtocart" href="#" id="add-cart">Add To Tour List</a>
+        </div>
+        </div>
+        <div class="tourdetail" >
+          <img
+          src="../images/gg.jpg"
+          alt="ggbridge"
+          
+        />
+        <div class="tourdetailslist">
+          <h5>Golden Gate Bridge</h5>
+          <div class="insidedata">
+          <div class="col1">
+            <h6>Time: 10:00 pm</h6>
+          <h6>Date: 2023/07/17</h6>
+          <h6>Number of tourist: 5</h6>
+          <h6>Locations: a,b,c</h6>
+          </div>
+          <div class="col2">
+            <h6>Accomodations: availiable</h6>
+            <h6>Duration of tour: 2 days</h6>
+            <h6>Total Amount: $150</h6>
+          </div>
+          
+          </div>
+        </div>
+        <div class="addinCart">
+          <a class="addtocart" href="#" id="add-cart">Add To Tour List</a>
+        </div>
+        </div>
+        <div class="tourdetail" >
+          <img
+          src="../images/gg.jpg"
+          alt="ggbridge"
+          
+        />
+        <div class="tourdetailslist">
+          <h5>Golden Gate Bridge</h5>
+          <div class="insidedata">
+          <div class="col1">
+            <h6>Time: 10:00 pm</h6>
+          <h6>Date: 2023/07/17</h6>
+          <h6>Number of tourist: 5</h6>
+          <h6>Locations: a,b,c</h6>
+          </div>
+          <div class="col2">
+            <h6>Accomodations: availiable</h6>
+            <h6>Duration of tour: 2 days</h6>
+            <h6>Total Amount: $150</h6>
+          </div>
+          
+          </div>
+        </div>
+        <div class="addinCart">
+          <a class="addtocart" href="" id="add-cart">Add To Tour List</a>
+        </div>
+        </div>
+        <a href="">Load more</a>
+        
+      </div>
+    </div>-->
+
+    <div class="available-cards" id="available-cards"avail-cards-container></div>
+
+    <template data-avail-template>
+      <div class="card">
+        <div class="package-img" id="img" data-img></div>
+        <div class="package-name" data-name></div>
+        <div class="package-time" data-time></div>
+        <div class="package-date" data-date></div>
+        <div class="package-num-tourists" data-num-tourists></div>
+        <div class="package-location" data-location></div>
+        <div class="package-accomodations" data-accomodations></div>
+        <div class="package-duration" data-duration></div>
+        <div class="package-price" data-price></div>
+        <div class="addinCart">
+          <a class="addtocart" href="/scheduledtours" id="add-cart">Add To Tour List</a>
+        </div>
+      </div>
+    </template>
+
+
+
+
+    <section>
+    <!--Foter and links icons   -->
+    <div class="global">
+      <div class="curve"></div>
+      <div class="contaainer">
+        <div class="col-md-6 col-md-3">
+          <h1>TourMe Today</h1>
+          <p>is a meticulously crafted web application developed by a San Francisco State University student 
+            as part of their final project in a class. The aim of this endeavor is to seek potential investors 
+            who can provide financial support and enable the application to serve the burgeoning tourist population 
+            visiting San Francisco. Moreover, this application presents a unique opportunity for individuals interested 
+            in sharing their firsthand experiences from the enchanting locations that San Francisco has to offer, as 
+            it also provides employment opportunities.</p>
+        </div>
+        <div class="row">
+          <div class="col-sm-6-col-md-1">
+            <h6>Service</h6>
+            <ul>
+              <li><a href="#" >Package </a></li>
+              <li><a href="#" >Tour Guide</a></li>
+              <li><a href="#" >Torist </a></li>
+              <li><a href="#" >Design Tour Package</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6-col-md-2">
+            <h6>About Us</h6>
+            <ul>
+              <li> <a href="#" >Our Story</a> </li>
+              <li><a href="#" >Teams</a></li>
+              <li><a href="#" > Careers </a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6-col-md-3">
+            <h6>Legal</h6>
+            <ul>
+              <li><a href="#" >Terms & Conditions </a></li>
+              <li><a href="#" >Privacy Policy</a> </li>
+              <li><a href="#" >Torist </a></li>
+              <li><a href="#" >Users Terms</a></li>
+            </ul>
+          </div>
+
+          <!---social medai icons -->
+          <div class="Social">
+            <h6>Follow us </h6>
+            <a href="/application//prototypes/horizontalPrototype/HomePage/tourselection.html"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></a></i>
+            <a href="#"><i class="fa-brands fa-square-snapchat"></a></i>
+          </div>
+
+        </div>
+        <p class="copyright">&copy; Copyright All rights reserved.  </p>
+      </div>
+
+    </div>
+    </section>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+    <script type="text/javascript" src="js/tourPackages.js"></script>
+
+  </body>
+</html>

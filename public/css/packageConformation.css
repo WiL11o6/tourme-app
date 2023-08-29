@@ -1,0 +1,776 @@
+<<<<<<< HEAD
+
+.mainboxeach {
+   display: grid;
+   grid-template-columns: auto auto;
+   padding: 10px 10px; 
+   
+   margin: 10px 20px;
+   border-radius: 20px;
+   text-align: start;
+   position: relative;
+   
+}
+.mainboxeach h6 {
+   font-size: 16px;
+   margin-top: 5px;
+   margin-left: 15px;
+}
+
+.addtocart{
+   display:flex;
+   text-decoration: none;
+   padding: 5px 20px;
+   font-size: 20px;
+   margin: 10px;
+   background-color: #e9b191;
+   color:#ffffff;
+   border-radius: 30px;
+}
+.checkout{
+   display:flex;
+   text-decoration: none;
+   padding: 5px 20px;
+   font-size: 20px;
+   margin: 10px;
+   background-color: #686462;
+   color:#ffffff;
+   border-radius: 30px;
+}
+
+.tourdetail{
+   display: flex;
+   align-items: center;
+   padding: 10px 10px;
+   border-radius: 20px;
+}
+.tourdetail img {
+            width: 120px;
+            height: 120px;
+            border-radius: 15px;
+            object-fit: cover;         
+}
+
+
+
+
+
+
+
+/* Juan's own version for packages */
+.content-section {
+   margin: 1em;
+}
+
+.container {
+   display: inline-block;
+   margin: 0 auto;
+   padding: 0 1.5em;
+   width: 100%;
+}
+
+.shop-item {
+   display: flex;
+   align-items: center;
+   margin-bottom: 2em;
+   padding: 10px 10px;
+   border-radius: 20px;
+}
+
+.shop-items .shop-item .shop-item-image {
+   width: 120px;
+   height: 120px;
+   border-radius: 15px;
+   object-fit: cover;         
+}
+
+.shop-item-title {
+   display: inline-block;
+   width: 100%;
+   margin-left: 1.5rem;
+   text-align: left;
+   font-weight: bold;
+   font-size: 1.5em;
+   color: #333;
+   margin-bottom: 12px;
+}
+
+.shop-item-date,
+.shop-item-time,
+.shop-item-location {
+   display: inline-block;
+   width: 100%;
+   margin-left: 1.5rem;
+   text-align: left;
+   font-weight: bold;
+   font-size: 1rem;
+   color: #333;
+   margin-bottom: 8px;
+
+   /* font-size: 16px;
+   margin-top: 5px;
+   margin-left: 15px; */
+}
+
+.shop-item-details {
+   margin-left: auto;
+   display: inline-flex;
+   align-items: center;
+   padding: 5px;
+}
+
+.shop-item-data {
+   margin-right: auto;
+}
+
+.shop-item-price {
+   display: inline-flex;
+   margin-top: 15px;
+   margin-right: 15px;
+   margin-left: 40px;
+   text-align: center;
+   flex-grow: 1;
+   color: #333;
+}
+
+.shop-items {
+   display: inline-block;
+   max-width: 60%;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.btn {
+   font-size: 13px;
+   text-align: center;
+   justify-content: center;
+   min-width: 60%;
+   max-width: 100%;
+   
+   cursor: pointer;
+}
+
+.btn-primary {
+   color: white;
+   background-color: orange;
+   border: none;
+   border-radius: .5em;
+   font-weight: bold;
+}
+
+.btn-primary:hover {
+   background-color: #2D9CDB;
+}
+
+/* -------------------------------------------------------------------------*/
+
+/* ---------------------------------------TourGuide------------------------------*/
+.tour-guide-detail {
+   display: flex;
+   align-items: center;
+   margin-bottom: 2em;
+   padding: 10px 10px;
+   border-radius: 20px;
+}
+
+.shop-items .tour-guide-detail .tour-guide-image {
+   width: 120px;
+   height: 175px;
+   border-radius: 15px;
+   object-fit: cover;         
+}
+
+.tour-guide-title {
+   display: inline-block;
+   width: 100%;
+   margin-left: 1.5rem;
+   text-align: left;
+   font-weight: bold;
+   font-size: 1.5em;
+   color: #333;
+   margin-bottom: 12px;
+}
+
+.tour-guide-name,
+.tour-guide-age,
+.tour-guide-info {
+   display: inline-block;
+   width: 100%;
+   margin-left: 1.5rem;
+   text-align: left;
+   font-weight: bold;
+   font-size: 1rem;
+   color: #333;
+   margin-bottom: 8px;
+}
+
+/* ------------------------------------------------------------------------------*/
+
+/* ------------------------------------ START Of ShoppingCart -----------------------------*/
+
+.container-cart {
+   display: inline-block;
+   margin: 0 auto;
+   padding: 0 1.5em;
+   width: 69%;
+}
+
+.section-header {
+   font-weight: normal;
+   color: #333;
+   text-align: center;
+   font-size: 2.5em;
+}
+
+.cart-header {
+   font-weight: bold;
+   font-size: 1.25em;
+   color: #333;
+}
+
+.cart-column {
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid black;
+   margin-right: 1.5em;
+   padding-bottom: 10px;
+   margin-top: 10px;
+}
+
+.cart-row {
+   display: flex;
+}
+
+.cart-item {
+   width: 45%;
+}
+
+.cart-price {
+   width: 20%;
+   font-size: 1.2em;
+   color: #333;
+}
+
+.cart-quantity {
+   width: 35%;
+}
+
+.cart-item-title {
+   color: #333;
+   margin-left: .5em;
+   font-size: 1.2em;
+}
+
+.cart-item-image {
+   width: 75px;
+   height: auto;
+   border-radius: 10px;
+}
+
+.btn-danger {
+   color: white;
+   background-color: #EB5757;
+   border: none;
+   border-radius: .3em;
+   font-weight: bold;
+}
+
+.btn-danger:hover {
+   background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+   height: 34px;
+   width: 50px;
+   border-radius: 5px;
+   border: 1px solid #56CCF2;
+   background-color: #eee;
+   color: #333;
+   padding: 0;
+   text-align: center;
+   font-size: 1.2em;
+   margin-right: 25px;
+}
+
+.cart-row:last-child {
+   border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+   border: none;
+}
+
+.cart-total {
+   text-align: end;
+   margin-top: 10px;
+   margin-right: 10px;
+}
+
+.cart-total-title {
+   font-weight: bold;
+   font-size: 1.5em;
+   color: black;
+   margin-right: 20px;
+}
+
+.cart-total-price {
+   color: #333;
+   font-size: 1.1em;
+}
+
+.btn-purchase {
+   display: block;
+   margin: 40px auto 80px auto;
+   font-size: 1.75em;
+}
+/* ------------------------------------ END Of ShoppingCart --------------------------------*/
+
+
+
+
+
+
+.tourdetailslist{
+   flex-grow: 3;
+   text-align: left;
+   padding: 5px 20px;
+}
+.tourdetailslist .insidedata{
+   display: block;
+}
+.shop-items {
+   flex-grow: 2;
+   margin-right: 100px;
+}
+
+
+.tourdetailslist h6{
+   font-size: 15px;
+}
+.tourdetailslist h5{
+   padding: 5px 0px;
+   font-size: 22px;
+}
+@media (min-width:1250px){
+   .tourdetailslist .insidedata{
+      display: flex;
+   }
+   .tourdetailslist h6{
+      font-size: 18px;
+   }
+   .tourdetailslist h5{
+      padding: 5px 0px;
+      font-size: 26px;
+   }
+   .col2{
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      text-align: center;
+   }
+   .shop-items {
+      margin-right: 120px;
+   }
+   .addtocart{
+      padding: 10px 25px;
+      font-size: 25px;
+   }
+   
+   .tourdetailslist h6{
+      margin-top: 2px;}
+   .tourdetailslist {
+      margin-top: 2px;
+      padding-top: 2px;
+   }
+=======
+* {
+   --text-orange:#ff670e;
+   --text-blue: #2D9CDB;
+}
+
+.mainboxeach {
+   display: grid;
+   grid-template-columns: auto auto;
+   padding: 10px 10px; 
+   
+   margin: 10px 20px;
+   border-radius: 20px;
+   text-align: start;
+   position: relative;
+   
+}
+.mainboxeach h6 {
+   font-size: 16px;
+   margin-top: 5px;
+   margin-left: 15px;
+}
+
+.addtocart{
+   display:flex;
+   text-decoration: none;
+   padding: 5px 20px;
+   font-size: 20px;
+   margin: 10px;
+   background-color: #e9b191;
+   color:#ffffff;
+   border-radius: 30px;
+}
+.checkout{
+   display:flex;
+   text-decoration: none;
+   padding: 5px 20px;
+   font-size: 20px;
+   margin: 10px;
+   background-color: #686462;
+   color:#ffffff;
+   border-radius: 30px;
+}
+
+.tourdetail{
+   display: flex;
+   align-items: center;
+   padding: 10px 10px;
+   border-radius: 20px;
+}
+.tourdetail img {
+            width: 120px;
+            height: 120px;
+            border-radius: 15px;
+            object-fit: cover;         
+}
+
+
+
+
+
+
+
+/* Juan's own version for packages */
+.content-section {
+   margin: 1em;
+}
+
+.container {
+   display: inline-block;
+   margin: 0 auto;
+   padding: 0 1.5em;
+   width: 100%;
+}
+
+.shop-item {
+   display: flex;
+   align-items: center;
+   margin-bottom: 2em;
+   padding: 10px 10px;
+   border-radius: 20px;
+}
+
+.shop-items .shop-item .shop-item-image {
+   width: 120px;
+   height: 120px;
+   border-radius: 15px;
+   object-fit: cover;         
+}
+
+.shop-item-title {
+   display: inline-block;
+   width: 100%;
+   margin-left: 1.5rem;
+   text-align: left;
+   font-weight: bold;
+   font-size: 1.5em;
+   color: #333;
+   margin-bottom: 12px;
+}
+
+.shop-item-date,
+.shop-item-time,
+.shop-item-location {
+   display: inline-block;
+   width: 100%;
+   margin-left: 1.5rem;
+   text-align: left;
+   font-weight: bold;
+   font-size: 1rem;
+   color: #333;
+   margin-bottom: 8px;
+
+   /* font-size: 16px;
+   margin-top: 5px;
+   margin-left: 15px; */
+}
+
+.shop-item-details {
+   margin-left: auto;
+   display: inline-flex;
+   align-items: center;
+   padding: 5px;
+}
+
+.shop-item-data {
+   margin-right: auto;
+}
+
+.shop-item-price {
+   display: inline-flex;
+   margin-top: 15px;
+   margin-right: 15px;
+   margin-left: 40px;
+   text-align: center;
+   flex-grow: 1;
+   color: #333;
+}
+
+.shop-items {
+   display: inline-block;
+   max-width: 60%;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+/* -------------------------------------------------------------------------*/
+
+/* ---------------------------------------TourGuide------------------------------*/
+.tour-guide-detail {
+   display: flex;
+   align-items: center;
+   margin-bottom: 2em;
+   padding: 10px 10px;
+   border-radius: 20px;
+}
+
+.shop-items .tour-guide-detail .tour-guide-image {
+   width: 120px;
+   height: 175px;
+   border-radius: 15px;
+   object-fit: cover;         
+}
+
+.tour-guide-title {
+   display: inline-block;
+   width: 100%;
+   margin-left: 1.5rem;
+   text-align: left;
+   font-weight: bold;
+   font-size: 1.5em;
+   color: #333;
+   margin-bottom: 12px;
+}
+
+.tour-guide-name,
+.tour-guide-age,
+.tour-guide-info {
+   display: inline-block;
+   width: 100%;
+   margin-left: 1.5rem;
+   text-align: left;
+   font-weight: bold;
+   font-size: 1rem;
+   color: #333;
+   margin-bottom: 8px;
+}
+
+/* ------------------------------------------------------------------------------*/
+
+/* ------------------------------------ START Of ShoppingCart -----------------------------*/
+
+.container-cart {
+   display: grid;
+   padding: 10px 10px;
+   border-radius: 15px;
+   background-color:transparent;
+   border-width: 2px;
+   border-style: solid;
+   border-color: var(--text-orange);
+   position: relative;
+   margin: 0 auto;
+   padding: 0 1.5em;
+   width: 85%;
+}
+
+.section-header {
+   margin: 25px auto 35px auto;
+   font-weight: bold;
+   color: #333;
+   text-align: center;
+   font-size: 2em;
+}
+
+.cart-header {
+   font-weight: bold;
+   font-size: 1.25em;
+   color: #333;
+}
+
+.cart-column {
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid black;
+   margin-right: 1.5em;
+   padding-bottom: 10px;
+   margin-top: 10px;
+}
+
+.cart-row {
+   display: flex;
+}
+
+.cart-item {
+   width: 45%;
+}
+
+.cart-price {
+   width: 20%;
+   font-size: 1.2em;
+   color: #333;
+}
+
+.cart-quantity {
+   width: 35%;
+}
+
+.cart-item-title {
+   color: #333;
+   margin-left: .5em;
+   font-size: 1.2em;
+}
+
+.cart-item-image {
+   width: 75px;
+   height: auto;
+   border-radius: 10px;
+}
+
+.btn-danger {
+   color: white;
+   background-color: var(--text-orange);
+   margin-bottom: 15px;
+   border: none;
+   border-radius: .3em;
+   font-weight: bold;
+}
+
+.btn-danger:hover {
+   background-color: var(--text-blue);
+}
+
+.cart-quantity-input {
+   height: 34px;
+   width: 50px;
+   border-radius: 5px;
+   border: 1px solid #56CCF2;
+   background-color: #eee;
+   color: #333;
+   padding: 0;
+   text-align: center;
+   font-size: 1.2em;
+   margin-right: 25px;
+}
+
+.cart-row:last-child {
+   border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+   border: none;
+}
+
+.cart-total {
+   text-align: end;
+   margin-top: 10px;
+   margin-right: 10px;
+}
+
+.cart-total-title {
+   font-weight: bold;
+   font-size: 1.5em;
+   color: black;
+   margin-right: 20px;
+}
+
+.cart-total-price {
+   color: #333;
+   font-size: 1.1em;
+}
+
+.btn-purchase{
+   color: white;
+   background-color: var(--text-orange);
+   text-align: center;
+   display: block;
+   margin: 40px auto 80px auto;
+   font-size: 1.50em;
+   border-radius: .5em;
+   font-weight: bold;
+}
+
+.btn-purchase:hover {
+   background-color: white;
+   color: var(--text-orange)
+}
+
+.btn-primary:hover {
+   color: black;
+   background-color: var(--text-blue);
+}
+/* ------------------------------------ END Of ShoppingCart --------------------------------*/
+
+
+
+
+
+
+.tourdetailslist{
+   flex-grow: 3;
+   text-align: left;
+   padding: 5px 20px;
+}
+.tourdetailslist .insidedata{
+   display: block;
+}
+.shop-items {
+   flex-grow: 2;
+   margin-right: 100px;
+}
+
+
+.tourdetailslist h6{
+   font-size: 15px;
+}
+.tourdetailslist h5{
+   padding: 5px 0px;
+   font-size: 22px;
+}
+@media (min-width:1250px){
+   .tourdetailslist .insidedata{
+      display: flex;
+   }
+   .tourdetailslist h6{
+      font-size: 18px;
+   }
+   .tourdetailslist h5{
+      padding: 5px 0px;
+      font-size: 26px;
+   }
+   .col2{
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      text-align: center;
+   }
+   .shop-items {
+      margin-right: 120px;
+   }
+   .addtocart{
+      padding: 10px 25px;
+      font-size: 25px;
+   }
+   
+   .tourdetailslist h6{
+      margin-top: 2px;}
+   .tourdetailslist {
+      margin-top: 2px;
+      padding-top: 2px;
+   }
+>>>>>>> 772b36a498f2ccffede1f13b44fd949dd83f22a7
+}

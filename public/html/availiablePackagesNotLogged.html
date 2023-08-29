@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOUR ME</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/navigationBar.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/social.css" />
+    <link rel="stylesheet" href="../css/availiablePackages.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9852b225f3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="check" />
+      <nav>
+        <div class="logo">
+          <a href="/">
+            <img src="../images/icon.png" alt="" />
+          </a>
+        </div>
+
+        <div class="search-box">
+          <input id="search-text" type="search" placeholder="Search..." />
+          <button id="search-button" class="fa fa-search src-btn"></button>
+        </div>
+
+        <ul>
+          <!-- <li><a href="/">Home</a></li> -->
+
+          <li><a href="/"> Home </a></li>
+          <li><a href="/html/signin.html">Sign in</a></li>
+        </ul>
+
+        <label for="check" class="bar">
+          <span class="fa fa-bars" id="bars"></span>
+          <span class="fa fa-times" id="times"></span>
+        </label>
+      </nav>
+    </header>
+
+    <div class="pageheading"></div>
+
+    <div class="fullpage">
+      <h2>Availiable Packages</h2>
+      <div class="mainhome">
+        <!---------- Package #1 ------->
+        <div class="mainboxeach">
+          <div id="1" class="shop-items">
+            <span class="shop-item-title">Tour Package 1 Name: </span>
+            <div class="shop-item">
+              <img class="shop-item-image" src="../images/gg.jpg" />
+              <div class="shop-item-data">
+                <span class="shop-item-name">Golden Gate Bridge</span>
+                <span class="shop-item-date">Date: 2023/07/17</span>
+                <span class="shop-item-time">Time: 10:00 AM</span>
+                <span class="shop-item-location"
+                  >Pickup Location: Somewhere</span
+                >
+              </div>
+            </div>
+            <div class="shop-item">
+              <img class="shop-item-image" src="../images/gg.jpg" />
+              <div class="shop-item-data">
+                <span class="shop-item-name">Golden Gate Bridge</span>
+                <span class="shop-item-date">Date: 2023/07/17</span>
+                <span class="shop-item-time">Time: 10:00 AM</span>
+                <span class="shop-item-location"
+                  >Pickup Location: Somewhere</span
+                >
+              </div>
+              <div class="shop-item-details">
+                <span class="shop-item-price">16.99</span>
+                <a href="./signin.html">
+                  <button
+                    class="btn btn-primary shop-item-button"
+                    type="button"
+                  >
+                    SELECT PACKAGE
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-------Package #2 ------->
+        <div class="mainboxeach">
+          <!--first item-->
+          <div id="2" class="shop-items">
+            <span class="shop-item-title">Tour Package 2 Name: </span>
+            <div class="shop-item">
+              <img class="shop-item-image" src="../images/gg.jpg" />
+              <div class="shop-item-data">
+                <span class="shop-item-name">Golden Gate Bridge</span>
+                <span class="shop-item-date">Date: 2023/07/17</span>
+                <span class="shop-item-time">Time: 10:00 AM</span>
+                <span class="shop-item-location"
+                  >Pickup Location: Somewhere</span
+                >
+              </div>
+            </div>
+            <!--second item-->
+            <div class="shop-item">
+              <img class="shop-item-image" src="../images/gg.jpg" />
+              <div class="shop-item-data">
+                <span class="shop-item-name">Golden Gate Bridge</span>
+                <span class="shop-item-date">Date: 2023/07/17</span>
+                <span class="shop-item-time">Time: 10:00 AM</span>
+                <span class="shop-item-location"
+                  >Pickup Location: Somewhere</span
+                >
+              </div>
+            </div>
+            <!--third item-->
+            <div class="shop-item">
+              <img class="shop-item-image" src="../images/gg.jpg" />
+              <div class="shop-item-data">
+                <span class="shop-item-name">Golden Gate Bridge</span>
+                <span class="shop-item-date">Date: 2023/07/17</span>
+                <span class="shop-item-time">Time: 10:00 AM</span>
+                <span class="shop-item-location"
+                  >Pickup Location: Somewhere</span
+                >
+              </div>
+              <div class="shop-item-details">
+                <span class="shop-item-price">36.99</span>
+                <a href="./signin.html">
+                  <button
+                    class="btn btn-primary shop-item-button"
+                    type="button"
+                  >
+                    SELECT PACKAGE
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="./signin.html">Load more</a>
+    </div>
+
+    <!--Foter and links icons   -->
+    <section>
+      <div class="global">
+        <div class="curve"></div>
+        <div class="contaainer">
+          <p class="copyright">&copy; Copyright All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="../js/validation.js"></script>
+    <script type="text/javascript" src="../js/redirectTosignin.js"></script>
+  </body>
+</html>

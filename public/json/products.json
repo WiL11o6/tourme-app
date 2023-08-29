@@ -1,0 +1,16 @@
+[ {
+    "id": 1,
+    "image" : "bike-1.jpeg",
+    "name" : "Orient Vita pro 28",
+    "price": "284.50",
+    "quantity" : 1
+},
+
+{
+    "id": 2,
+    "image" : "bike-1.jpeg",
+    "name" : "Orient Vita pro 28",
+    "price": "127.00",
+    "quantity" : 1
+}
+]

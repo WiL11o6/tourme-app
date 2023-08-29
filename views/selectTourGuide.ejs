@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Select Tour Guide</title>
+    </head>
+    <body>
+        <h1>
+            Select a tour guide</h1>
+            <form action ="/tourGuide/selectTourGuide" method="post">
+                <select name="tourGuideId">
+                    <% tourGuides.forEach(tourGuide => { %>
+                    <option value="<%= tourGuide.tourGuideId %>"
+                    <%= tourGuide.firstName %> <%= tourGuide.lastName %> (ID: <%= tourGuide.tourGuideId %>)
+                    </option>
+                <% });%>
+                </select>
+                <button type="submit">Select Tour Guide</button>
+            </form>
+    </body>
+</html>

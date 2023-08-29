@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center the container */
+    align-items: center; /*Vertically center the container */
+    padding: 0 100px;
+    margin-top:10vh;
+    margin-bottom: 10%;
+  }
+  
+  .container h6{
+    font-size: 20px;
+    margin-bottom: 10%;
+  }
+  
+  .box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-color:  #f08010;
+    margin-right: 20px;
+    border-radius: 20px;
+  }
+  
+  .text{
+    color: #3a3838;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 10%;
+    cursor: pointer;
+    margin-top: 30%;
+    
+  }
+  .text:hover{
+    color: rgb(195, 198, 202);
+    text-shadow: 0px opx opx 1px rgba(255, 255, 255, .5);
+    color: #fff;
+    opacity: 0.6;
+    transition: 0.3s ease-in-out
+  }
+  
+  
+  

@@ -1,0 +1,102 @@
+.addinCart{
+   position: relative;
+   align-content: baseline;
+}
+.removeOrder{
+   position: absolute;
+   bottom: 0;
+   right: 15px;
+   display:inline-block;
+text-decoration: none;
+padding: 5px 20px;
+font-size: 20px;
+margin-bottom: 20px;
+background-color: #e9c07d;
+   color:#000000;
+   border-radius: 30px;
+}
+
+.mainhome{
+   display: block;
+   position: relative;
+   margin: auto;
+  width: 85%;
+
+}
+
+.tourdetail{
+   display: flex;
+   padding: 10px 10px;
+   margin: 20px 20px;
+   background-color: #fafafa;
+   border-radius: 20px;
+}
+.tourdetail img {
+            width: 180px;
+            height: 180px;
+            border-radius: 15px;
+            object-fit: cover;
+         
+}
+
+.tourdetailslist{
+   flex-grow: 3;
+   text-align: left;
+   padding: 5px 20px;
+}
+.tourdetailslist .insidedata{
+   display: block;
+}
+.col1, .col2{
+   margin-left: 10px;
+   margin-right: 55px;
+   align-content: flex-end;
+}
+
+.tourdetailslist h6{
+   font-size: 18px;
+}
+.tourdetailslist h5{
+   padding: 10px 0px;
+   font-size: 26px;
+}
+
+
+.showtotal{
+   text-align: left;
+   display: flex;
+   
+   padding: 50px 50px;
+   
+}
+.showtotal .total h3{
+   font-size: 25px;
+   position: absolute;
+   left: 25px;
+}
+
+ 
+.showtotal h3{
+   font-size: 25px;
+   position: absolute;
+   right: 25px;
+} 
+
+@media (min-width:1250px){
+   .removeOrder{
+      padding: 10px 25px;
+      font-size: 25px;
+   }
+
+}
+
+.confirmation{
+   
+      padding: 10px 35px;
+      font-size: 20px;
+      margin-top: 10px;
+      background-color: #647078;
+      color:#ffffff;
+      border-radius: 20px;
+      
+}

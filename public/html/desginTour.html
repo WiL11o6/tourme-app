@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOUR ME</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/touroption.css" />
+    <link rel="stylesheet" href="../css/desgintour.css" />
+    <link rel="stylesheet" href="../css/userprofile.css" />
+    
+    <link rel="stylesheet" href="../css/navigationBar.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9852b225f3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+
+   
+      <header>
+        <input type="checkbox" id="check" />
+        <nav>
+          <div class="logo">
+            <a href="../html/tourselection.html">
+              <img src="../images/icon.png" alt="" />
+            </a>
+          </div>
+  
+          <div class="search-box">
+            <input id="search-text" type="search" placeholder="Search..." />
+            <button id="search-button" class="fa fa-search src-btn"></button>
+          </div>
+  
+          <ul>
+            <!-- <li><a href="/">Home</a></li> -->
+            <li>
+              <a href="/packageconfirmation"><i class="fa-solid fa-cart-shopping">
+                  <p id="count">0</p>
+                </i></a
+              >
+            </li>
+            <li><a href="/auth/logout">Sign Out</a></li>
+            <a href="/userprofile"><img id="userProfilePhoto" class="imgprofile" src="../images/default_profile.png" alt=""/></a>
+          </ul>
+  
+          <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+          </label>
+        </nav>
+      </header>
+
+       
+        <!--heading line-->
+        <div class="lines">
+        <div class="grayline"></div>
+        <div class="orangeLine"></div>
+        </div>
+        <div class="textheading">
+            <h4>Design Your Tour Packages </h4>
+        </div>
+
+      <section>
+        <div class="containerr">
+            <form id="design-form" action="/auth/design" method="post">
+                <select id = "city" name="city" onchange="showMessage()">
+                    <option value="location">Location</option>
+                    <option value="San Francisco"> San Francisco </option>
+                    <option value="Las Vegas"> Las Vegas  </option>
+                    <option value="Los Angeles"> Los Angeles  </option>
+                    <option value="San Jose"> San Jose </option>
+                    <option value="Palo Alto"> Palo Alto </option>
+                </select>
+                <select id = "Number-of-Adults" name="adults">
+                    <option value="numAdults">Number of Adults</option>
+                    <option value="1 Adult"> 1 Adult</option>
+                    <option value="2 Adults"> 2 Adults</option>
+                    <option value="3 Adults"> 3 Adults</option>
+                    <option value="4+ Adults"> 4+ Adults</option>
+                </select>
+                <select id = "Number-of-Children" name="children">
+                    <option value="numChild">Number of Children</option>
+                    <option value="0 Children"> 0 Children </option>
+                    <option value="1 Child"> 1 Child </option>
+                    <option value="2 Children"> 2 Children  </option>
+                    <option value="3+ Children"> 3+ Children</option>
+                    
+                </select>
+
+                
+            
+                <input type="date" class="date" name ="date" placeholder="date">
+                 
+                
+                    <div class="sbt-btn">
+                      <button type="submit" class="textreserve">Select Locations</button>
+                    </div>
+            </form>
+        </div>
+
+      <!--Pop up Message-->
+      <div class="pop-up" id="popup">
+        <h4>This location will be available in a future update</h4>
+        <button type="button" onclick="closeMessage()">OK</button>
+      </div>
+    
+     
+         <!----Foother -->
+         <section>
+            <div class="foother">
+                <div class="text">
+                    <p class="copyright">&copy; Copyright All rights reserved.  </p>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript" src="../js/script.js"></script>
+    </body>
+    </html>

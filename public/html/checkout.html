@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOUR ME</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/social.css" />
+    <link rel="stylesheet" href="../css/navigationBar.css" />
+    <link rel="stylesheet" href="../css/checkout.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9852b225f3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Start of Navigation Bar-->
+    <header>
+      <input type="checkbox" id="check" />
+      <nav>
+        <div class="logo">
+          <a href="../html/tourselection.html">
+            <img src="../images/icon.png" alt="" />
+          </a>
+        </div>
+
+        <div class="search-box">
+          <input id="search-text" type="search" placeholder="Search..." />
+          <button id="search-button" class="fa fa-search src-btn"></button>
+        </div>
+
+        <ul>
+          <!-- <li><a href="/">Home</a></li> -->
+          <li>
+            <a href="/packageconfirmation"
+              ><i class="fa-solid fa-cart-shopping">
+                <p id="count">0</p>
+              </i></a
+            >
+          </li>
+          <li><a href="/auth/logout">Sign Out</a></li>
+          <a href="/userprofile"><img id="userProfilePhoto" class="imgprofile" src="../images/default_profile.png" alt=""/></a>
+        </ul>
+
+        <label for="check" class="bar">
+          <span class="fa fa-bars" id="bars"></span>
+          <span class="fa fa-times" id="times"></span>
+        </label>
+      </nav>
+    </header>
+    <!-- End of Navigation Bar -->
+    <div class="pageheading"></div>
+
+    <div class="fullpage">
+      <div class="mainhome">
+        <h2>Checkout</h2>
+        <div class="mainboxeach">
+          <div class="col1">
+            <form action="" class="grid-container">
+              <input
+                class="item1"
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Card Number"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              /><br />
+              <input
+                class="item2"
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Name On Card"
+              /><br />
+              <input
+                class="item3"
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Date of Exp"
+              /><br />
+              <input
+                class="item4"
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="CVV"
+              /><br />
+              <input
+                class="item5"
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Address"
+              /><br />
+              <input
+                class="item6"
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Country"
+              /><br />
+              <input
+                class="item7"
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="City"
+              /><br />
+              <input
+                class="item8"
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="State"
+              /><br />
+              <input
+                class="item9"
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Zip Code"
+              /><br />
+            </form>
+            <a href="/touristconfirmation" class="checkout"> Pay Now </a>
+          </div>
+          <div class="col2">
+            <h4>Tourist Payments</h4>
+            <h5>
+              Thank you for choosing our services. Once the payment process is
+              completed, you will receive a confirmation message. Kindly review
+              all your selections carefully before confirming, as refunds cannot
+              be processed after confirmation. Our team deeply values your
+              patronage and hopes you have a wonderful experience during your
+              tour.
+              <p>enjoy your tour</p>
+            </h5>
+            <h4>Total: $350</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <!--Foter and links icons   -->
+      <div class="global">
+        <div class="curve"></div>
+        <div class="contaainer">
+          <p class="copyright">&copy; Copyright All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+  </body>
+</html>

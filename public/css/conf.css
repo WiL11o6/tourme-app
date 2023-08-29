@@ -1,0 +1,28 @@
+.conf-container {
+    height: 400px;
+    background-color: #6C685D;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con_text {
+
+    height: 250px;
+    width: 80%; /* Optional: Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.con_text p {
+    color: aliceblue;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 20px
+}

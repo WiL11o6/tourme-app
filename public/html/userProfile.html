@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOUR ME</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="stylesheet" href="../css/userprofile.css" />
+    <link rel="stylesheet" href="../css/navigationBar.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9852b225f3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="check" />
+      <nav>
+        <div class="logo">
+          <a href="../html/tourselection.html">
+            <img src="../images/icon.png" alt="" />
+          </a>
+        </div>
+
+        <div class="search-box">
+          <input id="search-text" type="search" placeholder="Search..." />
+          <button id="search-button" class="fa fa-search src-btn"></button>
+        </div>
+        <ul>
+          <!-- <li><a href="/">Home</a></li> -->
+          <li>
+            <a href="/packageconfirmation"
+              ><i class="fa-solid fa-cart-shopping">
+                <p id="count">0</p>
+              </i></a
+            >
+          </li>
+          <li><a href="/auth/logout">Sign Out</a></li>
+          <a href="#"><img id="userProfilePhoto" class="imgprofile" src="../images/default_profile.png" alt=""/></a>
+        </ul>
+
+        
+
+        <label for="check" class="bar">
+          <span class="fa fa-bars" id="bars"></span>
+          <span class="fa fa-times" id="times"></span>
+        </label>
+      </nav>
+    </header>
+
+    <!--heading line-->
+    <div class="lines">
+      <div class="grayline"></div>
+      <div class="orangeLine"></div>
+    </div>
+
+    <div class="container">
+      <div class="textheading">
+        <h4>User's Profile</h4>
+      </div>
+      <!--
+      <div class="profile">
+        <img src="../images/tourist.jpg" class="profilepic" />
+      </div>-->
+    </div>
+
+             
+        <!--Profile Creation-->        
+        <h4>Let the tour guides know more about you!</h4>
+
+        <form id="userProfileForm" class="userProfileForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+            <br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+            <br>
+
+            <label for="description">Tell them a little bit about yourself:</label>
+            <textarea id="description" required></textarea>
+            <br>
+
+            <label for="photo">Upload Your Photo:</label>
+            <input type="file" name="photo" id="photo">
+
+            <input type="submit" value="Submit" class="pro-submit">
+        </form>
+
+        <!--User Profile-->
+        <div id="userProfileDisplay" class="userProfileDisplay">
+            
+        </div>
+        <section>
+          <div class="link-container">
+            <a class="box" href="/designtour">
+              Design Your Tour
+            </a>
+            <a class="box" href="/availablepackages">
+              List of Available Packages 
+            </a>
+
+            <a class="box" href="/tourschedule">
+              My Tour Schedule
+            </a>
+          
+            <div class="links">
+            <button class="box" type="button" onclick="showFutureUpdate()">
+              My Recent Tours 
+            </button>
+           </div>
+
+
+         
+
+      <!--Pop up Message-->
+      <div class="pop-up" id="popup">
+        <h4>This will be available in a future update</h4>
+        <button type="button" onclick="closeMessage()">OK</button>
+      </div>
+       
+        </section> 
+
+        <!----Foother -->
+        <section>
+            <div class="foother">
+                <div class="text">
+                    <p class="copyright">&copy; Copyright All rights reserved.  </p>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript" src="../js/script.js"></script>
+        <script type="text/javascript" src="../js/userProfile.js"></script>
+    </body>
+    </html>

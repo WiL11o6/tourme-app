@@ -1,0 +1,34 @@
+# TourMe 
+
+Welcome to TourMe, where we designed a tourism application that works like a rideshare app. Users can sign up as either a tour guide or as a tourist. Our product offer a specific
+and identified target users, tourists visiting San Francisco. Our aim is to ensure that our users have a delightful and memorable experience 
+while exploring SF out of all the tourist companies operate and our offer stands out with unique features and tour packages service. Tourists can select sightseeing locations within San Francisco,
+get picked up by tour guides to be shown across the city.
+
+This is a personal project while trying to learn React.js in conjuction with Bootstrap for styling. It's currently a work in progress and future updates will include:  
+    - The ability to select previous dates on a calender  
+    - A graphical representation of your lift progress  
+
+
+
+
+## Features
+
+- Track your daily workouts.
+- Log your lifts, sets, and reps.
+- Monitor your progress over time.
+
+## Getting Started
+
+   Clone this repository:
+   ```bash
+   git clone https://github.com/WiL11o6/tourme-app.git
+   npm install
+   npm start
+   Open your browser and go to: http://localhost:3000
+   ```
+
+
+# 🚀 About Me
+Hi, I'm Wilson,  
+And I'm aspiring to be a software engineer creating one project a time.

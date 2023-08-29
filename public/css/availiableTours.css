@@ -1,0 +1,107 @@
+
+.addtocart{
+   display:inline-block;
+text-decoration: none;
+padding: 5px 20px;
+font-size: 20px;
+margin-top: 10px;
+background-color: #647078;
+   color:#ffffff;
+   border-radius: 30px;
+}
+
+.mainhome{
+   display: block;
+   position: relative;
+   margin: auto;
+  width: 85%;
+
+}
+
+.tourdetail{
+   display: flex;
+   padding: 10px 10px;
+   margin: 20px 20px;
+   background-color: #fafafa;
+   border-radius: 20px;
+}
+.tourdetail img {
+            width: 200px;
+            height: 200px;
+            border-radius: 15px;
+            object-fit: cover;
+         
+}
+
+.tourdetailslist{
+   flex-grow: 3;
+   text-align: left;
+   padding: 5px 20px;
+}
+.tourdetailslist .insidedata{
+   display: block;
+}
+.col1, .col2{
+   margin-left: 10px;
+   margin-right: 55px;
+   align-content: flex-end;
+}
+
+.tourdetailslist h6{
+   font-size: 15px;
+}
+.tourdetailslist h5{
+   padding: 5px 0px;
+   font-size: 22px;
+}
+@media (min-width:1250px){
+   .tourdetailslist .insidedata{
+      display: flex;
+   }
+   .tourdetailslist h6{
+      font-size: 18px;
+   }
+   .tourdetailslist h5{
+      padding: 10px 0px;
+      font-size: 26px;
+   }
+   .col1, .col2{
+      margin-left: 10px;
+      margin-right: 155px;
+   }
+   .addtocart{
+      padding: 10px 25px;
+      font-size: 25px;
+   }
+
+}
+
+.available-cards {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 5rem;
+ }
+
+ .card {
+   background-color: #fafafa;
+   border-radius: 20px;
+   padding: 10px 10px;
+ }
+
+ .card > .package-name{
+   font-size: 26px;
+ }
+
+ .card > .package-img{
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   
+ }
+
+ .card > .package-img > img {
+   /* Set the maximum width and height for the image */
+   max-width: 200px;
+   max-height: 200px;
+   border-radius: 15px;
+ }

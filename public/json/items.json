@@ -1,0 +1,41 @@
+ [
+        {
+            "id": 1,
+            "image": "gg.jpg",
+            "name": "Tour Package 1 Name:",
+            "price": "29.99",
+            "quantity": 1
+        },
+   
+        {
+            "id": 2,
+            "image": "gg.jpg",
+            "name": "Tour Package 2 Name:",
+            "price": "19.99",
+            "quantity": 1
+        },
+   
+        {
+            "id": 3,
+            "image": "gg.jpg",
+            "name": "Tour Package 3 Name:",
+            "price": "12.99",
+            "quantity": 1
+        },
+
+         {
+            "id": 4,
+            "image": "gg.jpg",
+            "name": "Tour Package 4 Name:",
+            "price": "9.99",
+            "quantity": 1
+        },
+        
+         {
+            "id": 5,
+            "image": "gg.jpg",
+            "name": "Tour Package 5 Name:",
+            "price": "59.99",
+            "quantity": 1
+        }
+]

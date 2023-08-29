@@ -1,0 +1,239 @@
+* {
+   border: 0;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+   text-decoration: none;
+   list-style: none;
+   --text-orange:#ff670e;
+   --text-blue: #2D9CDB;
+}
+
+.fullpage {
+   display: block;
+   text-align: center;
+}
+
+.available-cards {
+   display: flex;
+   justify-content: center;
+   padding: 20px;
+ }
+
+ .card {
+   display: block;
+   min-width: 50%;
+   background-color: #e5e5e5;
+   border-radius: 20px;
+   padding: 20px;
+ }
+
+ .card > .package-img {
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   padding-bottom: 10px;
+ }
+
+.card > .package-img > img {
+   width: 300px;
+   height: 150px;
+   border-radius: 10px;
+   object-fit: cover;
+}
+
+ .card p {
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   text-align: center;
+   font-size: 17px;
+ }
+
+ .card p span {
+   font-style: italic;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 15px;
+ }
+
+ .card .removeinCart {
+   padding: 10px;
+ }
+ .card .removefromcart {
+   background-color: var(--text-orange);
+   color: white;
+   padding: 10px;
+   border-radius: 5px;
+ }
+
+ .card .removefromcart:hover {
+   background-color: var(--text-blue);
+   color: white;
+   letter-spacing: 0.05em;
+   transition: .7 ease-in-out;
+ }
+
+ .checkout {
+   color: white;
+   background-color: gray;
+   padding: 10px;
+   border-radius: 5px;
+ }
+
+ .checkout:hover {
+   background-color: var(--text-blue);
+   letter-spacing: 0.05em;
+   transition: .7 ease-in-out;
+ }
+
+footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   margin-top: 20px;
+   height: 3rem;
+   color: #f0f9ff;
+   background-image: url(../images/graybg.webp);
+   background-color: #272829;
+   background-position: center;
+   background-size: cover;
+   opacity: 0.85;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+footer .container {
+   margin-bottom: 5px;
+}
+footer .copyright {
+   color: white;
+}
+
+
+
+
+/* .mainboxeach{
+   display: block;
+   padding: 10px 10px; 
+   margin: 10px 20px;
+   border-radius: 20px;
+   text-align: start;
+   position: relative;
+   
+}
+.mainboxeach h6 {
+   font-size: 16px;
+   margin-top: 5px;
+   margin-left: 15px;
+}
+
+.addtocart{
+   display:inline-block;
+text-decoration: none;
+padding: 3px 15px;
+font-size: 20px;
+margin: 10px;
+background-color: #e9b191;
+   color:#ffffff;
+   border-radius: 30px;
+}
+.checkout{
+   display:inline-block;
+text-decoration: none; 
+padding: 5px 20px;
+font-size: 20px;
+margin: 10px;
+background-color: #686462;
+   color:#ffffff;
+   border-radius: 30px;
+}
+
+.mainhome{
+   display: block;
+   position: relative;
+   margin: auto;
+  width: 85%;
+
+}
+
+.tourdetail{
+   display: flex;
+   align-items: center;
+   padding: 10px 10px;
+   border-radius: 20px;
+}
+.tourdetail img {
+            width: 120px;
+            height: 120px;
+            border-radius: 15px;
+            object-fit: cover;      
+}
+
+.tourdetailslist{
+   flex-grow: 3;
+   text-align: left;
+   padding: 5px 20px;
+}
+.tourdetailslist .insidedata{
+   display: flex;
+}
+.col1{
+   flex-grow: 5;
+   margin-right: 100px;
+}
+.col2{
+   flex-grow: 1;
+   display: block;
+}
+
+.tourdetailslist h6{
+   font-size: 15px;
+}
+
+.tourdetailslist h5{
+   padding: 5px 0px;
+   font-size: 22px;
+}
+
+.wrapleft{
+text-align: end;
+padding-right: 60px;
+}
+@media (min-width:1250px){
+   .tourdetailslist .insidedata{
+      display: flex;
+   }
+   .tourdetailslist h6{
+      font-size: 18px;
+   }
+   .tourdetailslist h5{
+      padding: 5px 0px;
+      font-size: 26px;
+   }
+   .col2{flex: 1;
+      display: block;
+   }
+   .col1{
+      flex: 5;
+      margin-right: 120px;
+   }
+   .addtocart{
+      width: 120px;
+      padding: 5px 15px;
+      font-size: 25px;
+      text-align: center;
+   }
+   
+   .tourdetailslist h6{
+      margin-top: 2px;}
+   .tourdetailslist {
+      margin-top: 2px;
+      padding-top: 2px;
+   }
+}
+
+.package-image {
+   max-width: 100px;
+   height: auto;
+ }
+
+ */

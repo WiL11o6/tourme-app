@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOUR ME</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/9852b225f3.js"
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="blur-overlay"></div>
+
+    <!-- Login -->
+    <div class="signup-login">
+      <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
+      <div class="form-box login">
+        <div class="mainname">Sign In</div>
+        <form class="login-card-form">
+          <label for="usertypelog">I want to signin as:</label>
+          <select id="usertypelog">
+            <option value="user">User</option>
+            <option value="guide">Tour Guide</option>
+          </select>
+          <div class="input-field">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="username" required />
+            <label>Username</label>
+          </div>
+          <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="passWord" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" /> Remember me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn login">Sign In</button>
+          <div class="login-register">
+            <p>
+              Don't have an account?
+              <a href="#" class="register-link">Sign Up</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <!-- Registration-->
+      <div class="form-box register">
+        <div class="mainname">Sign Up</div>
+
+        <form id="signup" class="formboxmain">
+          <label for="usertype">I want to signup as:</label>
+          <select id="usertype">
+            <option value="user">User</option>
+            <option value="guide">Tour Guide</option>
+          </select>
+
+          <div class="input-field">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" required />
+            <label>First Name</label>
+          </div>
+          
+          <div class="input-field">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" required />
+            <label>Last Name</label>
+          </div>
+
+          <div class="input-field guide">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" required />
+            <label>Social Security Number</label>
+          </div>
+
+          <div class="input-field guide">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" required />
+            <label>Date of Birth</label>
+          </div>
+
+          <div class="input-field guide">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" required />
+            <label>Street Address</label>
+          </div>
+          <div class="input-field guide">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" required />
+            <label>City</label>
+          </div>
+          <div class="input-field guide">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" required />
+            <label>State</label>
+          </div>
+          <div class="input-field guide">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" required />
+            <label>Zip</label>
+          </div>
+
+          <!-- Email-->
+          <div class="input-field">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="email" id="email" required/>
+            <label for="email">Email</label>
+            <small></small>
+          </div>
+
+          <!--Username-->
+          <div class="input-field">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="username1" id="username1" required/>
+            <label>Username</label>
+            <small class="small"></small>
+          </div>
+
+          <!--Password-->
+          <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name ="pw" id ="pw" required/>
+            <label for="pw">Password</label>
+            <small></small>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="conf-pw" id ="conf-pw" required />
+            <label>Confirm Password</label>
+            <small></small>
+          </div>
+
+          <p class="incorrect-pw">Password does not match</p>
+          <div class="remember-forgot">
+            <label><input type="checkbox" required /> I have read terms and
+              conditions</label>
+          </div>
+
+              <button type="submit" class="btn register">Sign up</button>
+          
+          <div class="login-register">
+            <p>
+              Already have an account?
+              <a href="#" class="login-link">Sign In</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Main page-->
+    <div class="fullpage">
+      <div class="header">
+        <a href="../index.html" class="logo"
+          ><img src="../images/icon.png" alt="Logo" />
+        </a>
+        <ul class="navbar">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#" class="active">About&nbsp;Us</a></li>
+        </ul>
+
+        <div class="loginButton">
+          <a class="loginBut" href="#" id="login-popup">Sign In</a>
+
+          <div class="menu-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="belowbody">
+        <article id="homepage">
+          <div class="mainpagediv">
+            <section id="homebase">
+              <h3>Hello from Team-3</h3>
+              <h4>A Group of Programming Enthuaist</h4>
+              <h5>Want to know the team?</h5>
+              <div>
+                <p>
+                  We are team of six students working on a project for our CSC
+                  648 Software Engineering course.
+                </p>
+              </div>
+            </section>
+            <div class="imagemain">
+              <img src="../images/img1.jpg" alt="Student studying" />
+            </div>
+          </div>
+        </article>
+
+        <article class="eachsection" id="about">
+          <div class="headerofsec">The Team</div>
+
+          <!-- Fahim Profile -->
+          <div class="leftright">
+            <div class="eachsectionleft">
+              <ul class="boxtype">
+                <li><h1>FAHIM AMIRI</h1></li>
+                <li>GitHub Id: fahimamiri</li>
+                <li>
+                  Hobbies: I am an adventurous individual who enjoys engaging in
+                  outdoor activities such as zip-lining, hiking, and kayaking.
+                  Additionally, I have passion for observing and capturing
+                  sunsets through photography.
+                </li>
+                <li>Click on button below to view Profile</li>
+
+                <a href="fahim.html">
+                  <button class="btn">Visit Profile</button></a>
+              </ul>
+            </div>
+            <div class="eachsectionright">
+              <img src="../images/fahim.png" alt="Contacting on phone" />
+            </div>
+          </div>
+
+          <!--Xiao Profile -->
+          <div class="leftright">
+            <div class="eachsectionleft2">
+              <img src="../images/xiao.png" alt="Contacting on phone" />
+            </div>
+            <div class="eachsectionright2">
+              <ul class="boxtype">
+                <li><h1>XIAO NANG WU FENG</h1></li>
+                <li>GitHub Id: XiaoNangWu</li>
+                <li>
+                  Hobbies: Listen to music like to watch movies, tv shows, and
+                  sports. Play video games.
+                </li>
+                <li>Click on button below to view Profile</li>
+                <a href="xiao.html">
+                  <button class="btn">Visit Profile</button></a
+                >
+              </ul>
+            </div>
+          </div>
+
+          <!-- Juan Profile-->
+          <div class="leftright">
+            <div class="eachsectionleft">
+              <ul class="boxtype">
+                <li><h1>Juan Molina</h1></li>
+                <li>GitHub ID: itsJuanMolina</li>
+                <li>Hobbies: Playing soccer, Listening songs.</li>
+                <li>Click on button below to view Profile</li>
+                <a href="Juan.html">
+                  <button class="btn">Visit Profile</button></a>
+              </ul>
+            </div>
+            <div class="eachsectionright">
+              <img src="../images/Juan.png" alt="Juan" />
+            </div>
+          </div>
+
+          <!-- Andre Profile -->
+          <div class="leftright">
+            <div class="eachsectionleft2">
+              <img src="../images/andre.png" alt="Contacting on phone" />
+            </div>
+            <div class="eachsectionright2">
+              <ul class="boxtype">
+                <li><h1>ANDRE LAVILLA</h1></li>
+                <li>GitHub Id: alavilla01</li>
+                <li>
+                  Hobbies: Watching YouTube. Playing video games. Playing
+                  basketball.
+                </li>
+                <li>Click on button below to view Profile</li>
+                <a href="andre.html">
+                  <button class="btn">Visit Profile</button></a
+                >
+              </ul>
+            </div>
+          </div>
+
+          <!-- Wilson Profile -->
+          <div class="leftright">
+            <div class="eachsectionleft">
+              <ul class="boxtype">
+                <li><h1>Wilson Hong</h1></li>
+                <li>GitHub Id: WilsonHong1106</li>
+                <li>
+                  Hobbies: Watching YouTube /Netflix, Working out, I'm pretty
+                  boring
+                </li>
+                <li>Click on button below to view Profile</li>
+                <a href="wilson.html">
+                  <button class="btn">Visit Profile</button></a
+                >
+              </ul>
+            </div>
+            <div class="eachsectionright">
+              <img src="../images/wilson.jpg" alt="Contacting on phone" />
+            </div>
+          </div>
+
+          <!-- Rahima profile -->
+          <div class="leftright">
+            <div class="eachsectionleft2">
+              <img src="../images/rahima.png" alt="Contacting on phone" />
+            </div>
+            <div class="eachsectionright2">
+              <ul class="boxtype">
+                <li><h1>Rahima Kakar</h1></li>
+                <li>GitHub Id: rahima26</li>
+                <li>
+                  Hobbies: Bowling, watching movies, and playing board games.
+                </li>
+                <li>Click on button below to view Profile</li>
+                <a href="Rahima.html">
+                  <button class="btn">Visit Profile</button></a
+                >
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <div class="bottomlast"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../js/validation.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>

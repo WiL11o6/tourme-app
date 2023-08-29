@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOUR ME</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/social.css" />
+    <link rel="stylesheet" href="../css/locationSelection.css" />
+    <link rel="stylesheet" href="../css/navigationBar.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9852b225f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    
+    <div class="fullpage">
+      <header>
+        <input type="checkbox" id="check" />
+        <nav>
+          <div class="logo">
+            <a href="../html/tourselection.html">
+              <img src="../images/icon.png" alt="" />
+            </a>
+          </div>
+  
+          <div class="search-box">
+            <input id="search-text" type="search" placeholder="Search..." />
+            <button id="search-button" class="fa fa-search src-btn"></button>
+          </div>
+  
+          <ul>
+            <!-- <li><a href="/">Home</a></li> -->
+            <li>
+              <a href="/packageconfirmation">Cart
+                <i class="fa-solid fa-cart-shopping" id="count"> 0</i>
+              </a>
+            </li>
+            <li><a href="/auth/logout">Sign Out</a></li>
+            <a href="/userprofile"><img id="userProfilePhoto" class="imgprofile" src="../images/default_profile.png" alt=""/></a>
+          </ul>
+  
+          <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+          </label>
+        </nav>
+      </header>
+      
+       <!--Golden Gate Bridge-->
+      <div class="mainhome">
+        <div class="tourdetail" >
+          <img
+          class="schedule-item-image"
+          src="../images/gg.jpg"
+          alt="ggbridge"
+          
+        />
+       
+        <div class="tourdetailslist">
+          <h5 class="schedule-item title">Golden Gate Bridge</h5>
+          <div class="insidedata">
+            <div class="col1">
+              <h6>The Golden Gate Bridge is an iconic marvel, symbolizing San Francisco. Spanning the turbulent waters of the Golden Gate Strait, it boasts distinctive International Orange towers, an Art Deco design, and links the city to Marin County. 
+                Completed in 1937, it offers breathtaking views of the city skyline, Alcatraz Island, and the California coast, making it a must-see for visitors.</h6>
+            </div>
+            <div class="col2">
+              <form action="/auth/addlocation" method="post">
+                <input type="hidden" name="bridge" value="Golden Gate Bridge">
+                <button type="submit" class="addtocart"  href="#" id="add-cart">Add To Tour List</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+        <!--Fisherman's Wharf-->
+        <div class="tourdetail" >
+          <img
+          class="schedule-item-image"
+          src="../images/fishermanswharf.jpg"
+          alt="fishermanswharf"
+          
+        />
+        <div class="tourdetailslist">
+          <h5 class="schedule-item title">Fisherman's Wharf</h5>
+          <div class="insidedata">
+            <div class="col1">
+              <h6>Fisherman's Wharf in San Francisco is a vibrant waterfront destination famous for its fresh seafood, lively atmosphere, and scenic views. Visitors can enjoy delicious clam chowder, 
+                Dungeness crab, and fish 'n' chips while exploring attractions like Pier 39 with its sea lion colony and diverse shops and restaurants. It's a must-visit spot offering a memorable experience.</h6>
+            </div>
+            <div class="col2">
+              <form action="/auth/addlocation" method="post">
+                <input type="hidden" name="fisher" value="Fisherman's Wharf">
+                <button type="submit" class="addtocart"  href="#" id="add-cart">Add To Tour List</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+        <!--Coit Tower-->
+        <div class="tourdetail" >
+          <img
+          class="schedule-item-image"
+          src="../images/coit.jpg"
+          alt="coit"
+          
+        />
+        <div class="tourdetailslist">
+          <h5 class="schedule-item title">Coit Tower</h5>
+          <div class="insidedata">
+            <div class="col1">
+              <h6>Coit Tower, a San Francisco landmark, is a striking tower perched atop Telegraph Hill. It offers panoramic views of the city and the bay. The tower was built in 1933 and named after Lillie Hitchcock Coit, who left a bequest to beautify the city. Its unique Art Deco design and 
+                beautiful murals inside make it a cultural and architectural treasure. Visiting Coit Tower allows you to experience the city's beauty from a whole new perspective.</h6>
+            </div>
+            <div class="col2">
+              <form action="/auth/addlocation" method="post">
+                <input type="hidden" name="coit" value="Coit Tower">
+                <button type="submit" class="addtocart"  href="#" id="add-cart">Add To Tour List</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+        <div class="wraptoleft">
+          <a href="/shopingcart2"class="continuetocart">Continue To Cart</a>
+        </div>
+        <a href="">Load more</a>
+        
+      </div>
+    </div>
+    <section>
+    <!--Foter and links icons   -->
+    <div class="global">
+      <div class="curve"></div>
+      <div class="contaainer">
+        
+        
+          
+        </div>
+        <p class="copyright">&copy; Copyright All rights reserved.  </p>
+      </div>
+
+    </div>
+    </section>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+    <script src="js/locationSelection.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const addToCartButtons = document.querySelectorAll('.addtocart');
+  
+          addToCartButtons.forEach(button => {
+              button.addEventListener('click', () => {
+                  if (button.classList.contains('addtocart-color')) {
+                      button.classList.remove('addtocart-color');
+                      button.textContent = 'Add To Tour List';
+                  } else {
+                      button.classList.add('addtocart-color');
+                      button.textContent = 'Remove';
+                  }
+              });
+          });
+      });
+  </script>
+
+
+  </body>
+</html>

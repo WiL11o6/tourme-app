@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOUR ME</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="stylesheet" href="../css/userprofile.css" />
+    <link rel="stylesheet" href="../css/navigationBar.css" />
+    <link rel="stylesheet" href="../css/shopingCart2.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9852b225f3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="check" />
+      <nav>
+        <div class="logo">
+          <a href="../html/tourselection.html">
+            <img src="../images/icon.png" alt="" />
+          </a>
+        </div>
+
+        <div class="search-box">
+          <input id="search-text" type="search" placeholder="Search..." />
+          <button id="search-button" class="fa fa-search src-btn"></button>
+        </div>
+        <ul>
+          <!-- <li><a href="/">Home</a></li> -->
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-cart-shopping">
+                <p id="count">0</p>
+              </i></a
+            >
+          </li>
+          <li><a href="./html/login.html">Sign Out</a></li>
+          <a href="./html/userProfile.html"
+            ><img class="imgprofile" src="../images/tourist.jpg" alt=""
+          /></a>
+        </ul>
+
+        <label for="check" class="bar">
+          <span class="fa fa-bars" id="bars"></span>
+          <span class="fa fa-times" id="times"></span>
+        </label>
+      </nav>
+    </header>
+
+    <!--heading line-->
+    <div class="lines">
+        <div class="grayline"></div>
+        <div class="orangeLine"></div>
+    </div>
+
+    <!--tour schedule -->
+    <section class="container-schedule content-section">
+      <h2 class="section-header">Tour Schedule</h2>
+      <div class="schedule-row">
+        <span class="schedule-item schedule-header schedule-column">ITEM</span>
+      </div>
+      <div class="schedule-items"></div>
+    </section>
+
+    <div class="available-cards" id="available-cards" avail-cards-container>
+
+      <template data-avail-template>
+        <div class="card">
+          <!----------User name---------------------------->
+            <p>Tourist Name:  <span data-username></span></p>
+          <!----------------City---------------------------->
+            <p>City: <span data-city></span></p>
+          <!-----------# of adults-------------------------->
+            <p>Number of Adults: <span data-adults></span></p>
+          <!-----------# of adults-------------------------->
+            <p>Number of Children: <span data-children></span></p>
+            <p>Date: <span data-date></span></p>
+            <p>First Location: <span data-location></span></p>
+              <div class="package-img" data-img></div>
+            <p>Second Location: <span data-location2></span></p>
+  
+          <div class="package-img" data-img2></div>
+          <div class="removeinCart">
+            <a class="removefromcart" href="#" id="remove-cart" onclick="removeDesignedTour()">Remove Tour</a>
+          </div>
+        </div>
+      </template>
+    </div>
+
+             
+       
+
+        <!----Foother -->
+        <section>
+            <div class="foother">
+                <div class="text">
+                    <p class="copyright">&copy; Copyright All rights reserved.  </p>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript" src="../js/script.js"></script>
+        <script src="../js/locationSelection.js"></script>
+        <script type="text/javascript" src="../js/shoppingCart2.js"></script>
+    </body>
+    </html>

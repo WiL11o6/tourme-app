@@ -1,0 +1,120 @@
+
+.mainboxeach{
+   display: block;
+   padding: 10px 10px; 
+   margin: 10px 20px;
+   border-radius: 20px;
+   text-align: start;
+   position: relative;
+   
+}
+.mainboxeach h6 {
+   font-size: 16px;
+   margin-top: 5px;
+   margin-left: 15px;
+}
+
+.addtocart{
+   display:inline-block;
+text-decoration: none;
+padding: 3px 15px;
+font-size: 20px;
+margin: 10px;
+background-color: #e9b191;
+   color:#ffffff;
+   border-radius: 30px;
+}
+.checkout{
+   display:inline-block;
+text-decoration: none; 
+padding: 5px 20px;
+font-size: 20px;
+margin: 10px;
+background-color: #686462;
+   color:#ffffff;
+   border-radius: 30px;
+}
+
+.mainhome{
+   display: block;
+   position: relative;
+   margin: auto;
+  width: 85%;
+
+}
+
+.tourdetail{
+   display: flex;
+   align-items: center;
+   padding: 10px 10px;
+   border-radius: 20px;
+}
+.tourdetail img {
+            width: 120px;
+            height: 120px;
+            border-radius: 15px;
+            object-fit: cover;      
+}
+
+.tourdetailslist{
+   flex-grow: 3;
+   text-align: left;
+   padding: 5px 20px;
+}
+.tourdetailslist .insidedata{
+   display: flex;
+}
+.col1{
+   flex-grow: 5;
+   margin-right: 100px;
+}
+.col2{
+   flex-grow: 1;
+   display: block;
+}
+
+.tourdetailslist h6{
+   font-size: 15px;
+}
+
+.tourdetailslist h5{
+   padding: 5px 0px;
+   font-size: 22px;
+}
+
+.wrapleft{
+text-align: end;
+padding-right: 60px;
+}
+@media (min-width:1250px){
+   .tourdetailslist .insidedata{
+      display: flex;
+   }
+   .tourdetailslist h6{
+      font-size: 18px;
+   }
+   .tourdetailslist h5{
+      padding: 5px 0px;
+      font-size: 26px;
+   }
+   .col2{flex: 1;
+      display: block;
+   }
+   .col1{
+      flex: 5;
+      margin-right: 120px;
+   }
+   .addtocart{
+      width: 120px;
+      padding: 5px 15px;
+      font-size: 25px;
+      text-align: center;
+   }
+   
+   .tourdetailslist h6{
+      margin-top: 2px;}
+   .tourdetailslist {
+      margin-top: 2px;
+      padding-top: 2px;
+   }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TOUR ME</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/socail.css" />
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+          rel="stylesheet"
+        />
+        <script
+          src="https://kit.fontawesome.com/9852b225f3.js"
+          crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div id="searchResultsContainer">
+            <h1>Search Results:</h1>
+            <ul id="searchResults"></ul>
+        </div>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const searchInput = urlParams.get('searchInput');
+            const resultsJson = urlParams.get('results');
+            const results = JSON.parse(resultsJson);
+
+            const searchResultsContainer = document.getElementById('searchResultsContainer');
+            const searchResultsList = document.getElementById('searchResults');
+
+            if (results.length > 0) {
+                results.forEach(results => {
+                    const li = document.createElement('li');
+                    li.textContent = result.input;
+                    searchResultsList.appendChild(li);
+                });
+            } else {
+                const p = document.createElement('p');
+                p.textContent = 'No results found.';
+                searchResultsContainer.appendChild(p);
+            }
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/signin.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,300,0,0"
+    />
+    <!------------------- Navigation must----------------->
+    <link rel="stylesheet" href="../css/navigationBar.css" />
+    <script src="https://kit.fontawesome.com/9852b225f3.js"></script>
+    <!---------------------------------------------------->
+  </head>
+
+  <body>
+    <!-- Start of Navigation Bar-->
+    <header>
+      <input type="checkbox" id="check" />
+      <nav>
+        <div class="logo">
+          <a href="/">
+            <img src="../images/icon.png" alt="" />
+          </a>
+        </div>
+
+        <div class="search-box">
+          <input id="search-text" type="search" placeholder="Search..." />
+          <button id="search-button" class="fa fa-search src-btn"></button>
+        </div>
+
+        <ul>
+          <li><a href="/">Home</a></li>
+          <!---  <li><a href="#">Cart <i class="fa-solid fa-cart-shopping"></i></a></li>   -->
+          <li><a href="./registration.html">Sign Up</a></li>
+        </ul>
+
+        <label for="check" class="bar">
+          <span class="fa fa-bars" id="bars"></span>
+          <span class="fa fa-times" id="times"></span>
+        </label>
+      </nav>
+    </header>
+    <!-- End of Navigation Bar -->
+    <div class="pageheading"></div>
+    <div class="fullpage">
+      <h2>Sign In Form</h2>
+      <div class="mainhome">
+        <!--------- Start of Sign-in page-->
+        <main class="signup-card-container">
+          <form
+            id="signup"
+            class="form"
+            method="POST"
+            action="/auth/login"
+            enctype="application/x-www-form-urlencoded"
+          >
+            <h1>Sign In</h1>
+
+            <div class="form-field">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                required
+                autocomplete="off"
+              />
+              <label class="label-field" for="username">Username</label>
+              <small></small>
+            </div>
+
+            <div class="form-field">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                autocomplete="off"
+              />
+              <label class="label-field" for="password">Password </label>
+              <small></small>
+            </div>
+
+            <div class="form-field">
+              <input type="submit" value="Sign in" />
+            </div>
+            <p>
+              Don't have an account?
+              <a href="./registration.html"> Create an account</a>
+            </p>
+          </form>
+        </main>
+      </div>
+    </div>
+    <!--Foter and links icons   -->
+    <section>
+      <div class="global">
+        <div class="curve"></div>
+        <div class="contaainer">
+          <p class="copyright">&copy; Copyright All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Javascript for registration form-->
+    <script>
+      let label = document.querySelectorAll(".label-field").forEach((label) => {
+        label.innerHTML = label.innerText
+          .split("")
+          .map(
+            (letters, i) => `<span style="transition-delay: $
+                {i * 50}ms">${letters}</span>`
+          )
+          .join("");
+      });
+    </script>
+  </body>
+</html>

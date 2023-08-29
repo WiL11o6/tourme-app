@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOUR ME</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/social.css" />
+    <link rel="stylesheet" href="../css/packageConformation.css" />
+    <link rel="stylesheet" href="../css/navigationBar.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9852b225f3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="check" />
+      <nav>
+        <div class="logo">
+          <a href="../html/tourselection.html">
+            <img src="../images/icon.png" alt="" />
+          </a>
+        </div>
+
+        <div class="search-box">
+          <input id="search-text" type="search" placeholder="Search..." />
+          <button id="search-button" class="fa fa-search src-btn"></button>
+        </div>
+
+        <ul>
+          <!-- <li><a href="/">Home</a></li> -->
+          <li>
+            <a href="/packageconfirmation">Cart <i class="fa-solid fa-cart-shopping"> 0</i> </a>
+          </li>
+          <li><a href="/auth/logout">Sign Out</a></li>
+          <a href="/userprofile"><img id="userProfilePhoto" class="imgprofile" src="../images/default_profile.png" alt=""/></a>
+
+        </ul>
+
+        <label for="check" class="bar">
+          <span class="fa fa-bars" id="bars"></span>
+          <span class="fa fa-times" id="times"></span>
+        </label>
+      </nav>
+    </header>
+    <!-- End of Navigation Bar -->
+    <div class="pageheading"></div>
+
+    <div class="fullpage">
+      <h2>Reviewing and edit cart</h2>
+      
+      <div class="mainpage">
+        
+      <section class="container-shop content-section1">
+
+        <!-- Item #1 -->
+
+        <div class="shop-items">
+
+          <div class="shop-item">
+              <img class="shop-item-image" src="../images/gg.jpg">
+              <div class="shop-item-data">
+                <span id="shop-item-title" class="shop-item-title">Package 1 Name</span>
+                <span class="shop-item-date">Date: 2023/07/17</span>
+                <span class="shop-item-time">Time: 10:00 AM</span>
+                <span class="shop-item-location">Pickup Location: Somewhere</span>
+              </div>
+              <div class="shop-item-details">
+                  <span class="shop-item-price">$12.99</span>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+              </div>
+          </div>
+
+          <!-- Item #2 -->
+            <div id="shop-item" class="shop-item">
+                <img class="shop-item-image" src="../images/gg.jpg">
+                <div class="insidedata">
+                  <span id="shop-item-title" class="shop-item-title">Golden Gate Bridge</span>
+                  <span class="shop-item-date">Date: 2023/07/19</span>
+                  <span class="shop-item-time">Time: 10:00 PM</span>
+                  <span class="shop-item-location">Pickup Location: Somewhere</span>
+                </div>
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$69.69</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <!-- TourGuide -->
+            <div class="tour-guide-detail">
+              <img class="tour-guide-image" src="../images/userphoto.png">
+                <div class="insidedata">
+                  <span class="tour-guide-title">TourGuide</span>
+                  <span class="tour-guide-name">Name: Guide Name</span>
+                  <span class="tour-guide-age">Age: 25 yrs</span>
+                  <span class="tour-guide-info">Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Integer ac dui sed risus pulvinar interdum non sed est. Maecenas convallis iaculis lobortis.
+                     Integer condimentum facilisis massa sed elementum. Praesent ac vehicula velit.
+                     Nam feugiat volutpat gravida.</span>
+                </div>
+          </div>
+        </section>
+
+
+            <!--Shopping cart -->
+            <section class="container-cart content-section">
+              <h2 class="section-header">CART</h2>
+              <div class="cart-row">
+                  <span class="cart-item cart-header cart-column">ITEM</span>
+                  <span class="cart-price cart-header cart-column">PRICE</span>
+                  <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+              </div>
+              <div class="cart-items">
+              </div>
+              <div class="cart-total">
+                  <strong class="cart-total-title">Total</strong>
+                  <span class="cart-total-price">$0</span>
+              </div>
+              <a href="/touristcheckout">
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+              </a>
+          </section>
+    
+  <!--END of page-->
+
+
+      </div>
+
+      <section>
+        <!--Foter and links icons   -->
+        <div class="global">
+          <div class="curve"></div>
+          <div class="contaainer">
+            
+            <p class="copyright">&copy; Copyright All rights reserved.  </p>
+          </div>
+    
+        </div>
+        </section>
+
+  <script type="text/javascript" src="../js/cart.js"></script>
+  <script type="text/javascript" src="../js/validation.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+
+  </body>
+</html>

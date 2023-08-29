@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/registration.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!------------------- Navigation must----------------->
+    <link rel="stylesheet" href="../css/navigationBar.css" />
+    <script src="https://kit.fontawesome.com/9852b225f3.js"></script>
+    <!---------------------------------------------------->
+  </head>
+  <body>
+    <!-- Start of Navigation Bar-->
+    <header>
+      <input type="checkbox" id="check" />
+      <nav>
+        <div class="logo">
+          <a href="/">
+            <img src="../images/icon.png" alt="" />
+          </a>
+        </div>
+
+        <div class="search-box">
+          <input id="search-text" type="search" placeholder="Search..." />
+          <button id="search-button" class="fa fa-search src-btn"></button>
+        </div>
+
+        <ul>
+          <li><a href="/">Home</a></li>
+          <!---   <li><a href="#">Cart <i class="fa-solid fa-cart-shopping"></i></a></li>   -->
+          <li><a href="/html/signin.html">Sign in</a></li>
+        </ul>
+
+        <label for="check" class="bar">
+          <span class="fa fa-bars" id="bars"></span>
+          <span class="fa fa-times" id="times"></span>
+        </label>
+      </nav>
+    </header>
+    <!-- End of Navigation Bar -->
+
+    <div class="pageheading"></div>
+    <div class="fullpage">
+      <h2>Registration Form</h2>
+
+      <!-- Registration-->
+
+      <div class="mainhome">
+        <main class="signup-card-container">
+          <form
+            id="signup"
+            class="form"
+            method="POST"
+            action="/auth/register"
+            enctype="application/x-www-form-urlencoded"
+          >
+            <h1>Register</h1>
+
+            <div class="form-field">
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                required
+                autocomplete="off"
+              />
+              <label class="label-field" for="fname">First&nbspName</label>
+              <small></small>
+            </div>
+
+            <div class="form-field">
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                required
+                autocomplete="off"
+              />
+              <label class="label-field" for="lname">Last&nbspName</label>
+              <small></small>
+            </div>
+
+            <div class="form-field">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                required
+                autocomplete="off"
+              />
+              <label class="label-field" for="username">Username</label>
+              <small></small>
+            </div>
+
+            <div class="form-field">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                required
+                autocomplete="off"
+              />
+              <label class="label-field" for="email">Email</label>
+              <small></small>
+            </div>
+
+            <div class="form-field">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                autocomplete="off"
+              />
+              <label class="label-field" for="password">Password </label>
+              <small></small>
+            </div>
+            <div class="form-field">
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                required
+                autocomplete="off"
+              />
+              <label class="label-field" for="confirm-password"
+                >Confirm&nbspPassword</label
+              >
+              <small></small>
+            </div>
+
+            <div class="checkbox-field">
+              <input type="checkbox" id="req1" required />
+              <label for="req1"> I am at least 13 years or more of age</label
+              ><br />
+              <input type="checkbox" id="req2" required />
+              <label for="req2">
+                I agree to the&nbsp<a href="./termsandconditions.html">
+                  Terms and Conditions
+                </a>
+              </label>
+            </div>
+
+            <div class="form-field">
+              <input type="submit" value="Create Account" />
+            </div>
+            <p>Already have an account? <a href="./signin.html"> Sign in</a></p>
+          </form>
+        </main>
+      </div>
+    </div>
+    <!--Foter and links icons   -->
+    <section>
+      <div class="global">
+        <div class="curve"></div>
+        <div class="contaainer">
+          <p class="copyright">&copy; Copyright All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Javascript for registration form-->
+    <script>
+      let label = document.querySelectorAll(".label-field").forEach((label) => {
+        label.innerHTML = label.innerText
+          .split("")
+          .map(
+            (letters, i) => `<span style="transition-delay: $
+                    {i * 50}ms">${letters}</span>`
+          )
+          .join("");
+      });
+    </script>
+    <script type="text/javascript" src="../js/validation.js"></script>
+  </body>
+</html>
