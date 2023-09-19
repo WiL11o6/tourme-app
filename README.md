@@ -5,11 +5,16 @@ and identified target users, tourists visiting San Francisco. Our aim is to ensu
 while exploring SF out of all the tourist companies operate and our offer stands out with unique features and tour packages service. Tourists can select sightseeing locations within San Francisco,
 get picked up by tour guides to be shown across the city.
 
+<img src="images/tourme_homepage.png" alt="Alt Text" width="800"/>
+
+
+
 This is a project built by our team in our Software Engineering summer course at San Francisco State University going through the whole process from documentation, designing the database, UI/UX design, use cases mockups, usability
 and QA testing, and much more.  
  - The frontend is built with HTML/CSS/JavaScript
  - The backend is built with Node.js, Express.js using MySQL as our database system
  - Our application is served using an NGINX reverse proxy on a Google Compute Engine virtual machine
+
 
 
 
@@ -33,6 +38,7 @@ and QA testing, and much more.
 
 ## Or Visit Our External Link
 [Visit TourMe](http://35.209.194.163 "TourMe's Homepage")
+
 
 
 # 🚀 About Me
